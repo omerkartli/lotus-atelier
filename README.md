@@ -1,11 +1,16 @@
-# Lotus Atelier Chocolat — menü
+# Lotus Atelier Chocolat
 
-Menü sayfasının verisi ve fotoğrafları. Sayfanın kendisi (`lotus-menu.html`)
-`dijital-cozumlerim` reposunda durur ve bu depodaki `menu.json`'u okur.
+Ormanköy'deki Lotus Atelier Chocolat'nın sitesi. Düz HTML/CSS/JS, build adımı yok;
+GitHub Pages'te `main` dalının kökünden yayınlanır: https://omerkartli.github.io/lotus-atelier/
 
+- `index.html` — ana sayfa (masa ayırtma formu hazır WhatsApp mesajı oluşturur)
+- `menu.html` — menü sayfası; kategorileri, ürünleri ve fotoğrafları `menu.json` ve `images/`'ten okur
 - `menu.json` — kategoriler, alt kategoriler, ürünler, ilaveler ve alerjen notu
 - `images/` — ürün fotoğrafları (panelden yüklenir)
 - `.pages.yml` — yönetim paneli (Pages CMS) ayarları
+
+Sayfalar `noindex, nofollow` taşır; telefon, adres ve çalışma saatleri gerçek bilgilerle
+doldurulana kadar arama motorlarına açılmaz.
 
 ## Yönetim paneli
 
@@ -20,8 +25,3 @@ https://app.pagescms.org → GitHub hesabıyla giriş → `lotus-atelier` → **
 - Bir ürünü başka kategoriye taşımak için yeni kategoride yeniden eklenir, eskisi silinir.
 
 Kaydedilen her değişiklik `main` dalına commit olur; menü birkaç dakika içinde güncellenir.
-
-## Yayın
-
-GitHub Pages `main` dalının kökünden yayınlar (Settings → Pages). Menü sayfası
-`https://omerkartli.github.io/lotus-atelier/menu.json` adresini okur.
