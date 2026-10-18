@@ -537,23 +537,317 @@
       "altlar": [
         {
           "ad": "Espresso",
-          "urunler": []
+          "urunler": [
+            {
+              "ad": "Espresso",
+              "fiyat": 170,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzNjN2I5NDhmLTY0YTUtNDQ4OC04N2Q3LWU0YTliMWRhODU1OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Türk Kahvesi",
+              "fiyat": 150,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzhhMDY2NDkyLWFiNDItNDg3NS04NDlmLTUzNGM0ZWQwNjY0ZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Americano",
+              "fiyat": 215,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzM5OWNmMmUwLTI0YWUtNDFkZS04NzdiLTM1YzY4NDc5MTIyZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Latte",
+              "fiyat": 240,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzkxMjUyOTRhLTNjNTctNDY1Ni1hZjA0LTI2OWQ4OWVhMDY1My5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Cappuccino",
+              "fiyat": 240,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzQxNjY0NWM3LTE3YTItNGQyMy05MmE4LTU3OTI3M2YwY2E0My5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Flat White",
+              "fiyat": 240,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzUwZDgxZDJhLWI2NDctNDE5YS05MmQ5LTM2M2VmYzNiNDU3Ny5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Cortado",
+              "fiyat": 215,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzBhYTVhOGZhLTYyYzQtNGRmZC1iZWY5LTA5MDVlNzU1YzNmMi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Piccolo",
+              "fiyat": 215,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzViYmJmYjZmLWJmYjgtNDBiYS1hMTRjLWU2ZGI2MDRiNzM2Zi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Mocha",
+              "fiyat": 265,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzQwYjg3NzVhLTRhMzUtNDFhNC05MTBkLTJhNzVkNWZkNDkzNC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Belçika Çikolatası İle Yapılmaktadır.",
+              "aktif": true
+            },
+            {
+              "ad": "White Mocha",
+              "fiyat": 265,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2I1ZWZmY2MyLWJiMDEtNDFhMy1hOWFlLTcxOGE4OGNjY2EyOC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Belçika Çikolatası İle Yapılmaktadır.",
+              "aktif": true
+            },
+            {
+              "ad": "Vanilya Latte",
+              "fiyat": 265,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Caramel Macchiato",
+              "fiyat": 280,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Caramel Latte",
+              "fiyat": 265,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "",
+              "aciklama": "",
+              "aktif": true
+            }
+          ]
         },
         {
           "ad": "Soğuk Kahveler",
-          "urunler": []
+          "urunler": [
+            {
+              "ad": "Iced Latte",
+              "fiyat": 245,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2Q5OWNjZTIyLWRiZDQtNGUzOC1hNjMxLWU0NjU0NjQ3YTcxMy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Iced Americano",
+              "fiyat": 225,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2MwZGJkNzJkLTI1ZDctNDgzZC1iYjFhLTAxMTMzMzlhOTRlZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Brazil Carmo: Gövdeli, Çikolata Baskın ve Klasik Tat Arayanlara.\nEthiopia Chelbesa: Canlı, Asiditesi Yüksek ve Renkli Bir Tat Arayanlara.",
+              "aktif": true
+            },
+            {
+              "ad": "Ice Mocha",
+              "fiyat": 265,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzMwNjVhN2IxLWE0MmItNGNkNC1hZDQzLWJmNWNiMzgxMGI4ZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Belçika Çikolatası İle Yapılmaktadır.",
+              "aktif": true
+            },
+            {
+              "ad": "Ice White Mocha",
+              "fiyat": 265,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzM0NzYwMDA1LWM5YjctNDMyNi05M2Y2LWZmYzc5OWZkZmVmZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Belçika Çikolatası İle Yapılmaktadır.",
+              "aktif": true
+            },
+            {
+              "ad": "Cold Brew",
+              "fiyat": 260,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzIwYmYxMDdiLTQ2NTItNDc2OS04OTQxLTIxOGY0NTZiNmY3ZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Affogato",
+              "fiyat": 260,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2FjNzc5ODg0LWY0MTUtNGExMS1iNGNlLTU4MjRlZTEzYzQ0Yy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Kesme Dondurma, Espresso, Antep Fıstığı, Bal",
+              "aktif": true
+            },
+            {
+              "ad": "Ice Vanilya Latte",
+              "fiyat": 265,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Ice Caramel Latte",
+              "fiyat": 265,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Ice Caramel Macchiato",
+              "fiyat": 295,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzA4YmRkYmI0LWM4ZWMtNDY2Zi1hYTY2LTZkODkyNzQ5OGYxNi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            }
+          ]
         },
         {
           "ad": "Japanese Iced Coffee",
-          "urunler": []
+          "urunler": [
+            {
+              "ad": "Iced Colombia La Loma Caturra",
+              "fiyat": 370,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzIwYmYxMDdiLTQ2NTItNDc2OS04OTQxLTIxOGY0NTZiNmY3ZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Method: Washed\nHindistan Cevizi Yağı, Bubblegum, Kayısı, Ahududu",
+              "aktif": true
+            },
+            {
+              "ad": "Iced Colombia La Loma Sidra",
+              "fiyat": 400,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzIwYmYxMDdiLTQ2NTItNDc2OS04OTQxLTIxOGY0NTZiNmY3ZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Method: Washed\nYasemin, Gül, Japon Şeftalisi, Şeker Kamışı",
+              "aktif": true
+            },
+            {
+              "ad": "Iced Colombia Monteblanco Citrullus",
+              "fiyat": 370,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzIwYmYxMDdiLTQ2NTItNDc2OS04OTQxLTIxOGY0NTZiNmY3ZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Method: Washed\nKavun, Vanilya, Ananas, Muz, Karpuz, Lychee",
+              "aktif": true
+            }
+          ]
         }
       ],
-      "urunler": []
+      "urunler": [],
+      "not": "Süt seçimi: Klasik Barista Sütü ve Laktozsuz ücretsiz, Yulaf Sütü +60 ₺. Espresso seçimi: Brazil Carmo veya Ethiopia Chelbesa. Ekstra shot +35 ₺."
     },
     {
       "ad": "Yeni Nesil Alternatifler",
       "ilaveler": false,
-      "urunler": []
+      "urunler": [
+        {
+          "ad": "Lotus Latte",
+          "fiyat": 290,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2FjZTI4MTZjLTQ0NjgtNGFmNi1hYjM4LTRhZGE3N2JhMDVlMi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Lotus Bisküvi Kreması, Espresso, Süt",
+          "aktif": true
+        },
+        {
+          "ad": "Iced Lotus Latte",
+          "fiyat": 295,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2UyMDAxNDNlLTkyYTUtNGMwMC1iMWQ4LTE2ZmJlNzNhZWI3Yi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Lotus Bisküvi Kreması, Espresso, Süt",
+          "aktif": true
+        },
+        {
+          "ad": "Honey Cinnamon Latte",
+          "fiyat": 240,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzVjNzU3ODM3LTQxODAtNDhkYy04YWEzLTljMjYzYzQ1YmQ0ZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Bal, Tarçın, Süt, Espresso",
+          "aktif": true
+        },
+        {
+          "ad": "Matcha Latte",
+          "fiyat": 260,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzZhYWM2Y2EyLTgyZjgtNDI2OS04OWY3LTBjYTYxOGFjM2ZiZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Matcha Çayı, Süt",
+          "aktif": true
+        },
+        {
+          "ad": "Ice Matcha Latte",
+          "fiyat": 265,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2MxYzlhOTg3LTI4YWYtNDhjYi1iYTc4LWVlNTYxMmYyOWIxNy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Matcha Çayı, Süt",
+          "aktif": true
+        },
+        {
+          "ad": "Iced Strawberry Matcha",
+          "fiyat": 300,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2NkNDA1YmQ3LTAxNTItNDRhMy05MWJlLTVmNjc5ODAzMjU0Yi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Çilek, Matcha Çayı, Süt",
+          "aktif": true
+        },
+        {
+          "ad": "Iced Green Apple Matcha",
+          "fiyat": 300,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2YwNDU3YzZmLTAwNGEtNDEzYi1iNjIxLTc0ZGUzYmIzMmQ4NS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Yeşil Elma, Matcha Çayı, Süt",
+          "aktif": true
+        }
+      ],
+      "not": "Süt seçimi: Klasik Barista Sütü ve Laktozsuz ücretsiz, Yulaf Sütü +60 ₺."
     },
     {
       "ad": "İçecekler",
