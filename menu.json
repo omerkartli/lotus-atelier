@@ -492,7 +492,44 @@
     {
       "ad": "Filtre & Demleme Kahveler",
       "ilaveler": false,
-      "urunler": []
+      "urunler": [
+        {
+          "ad": "Filtre Kahve",
+          "fiyat": 220,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2IzMTJiZDM3LWNiOTgtNDk4MS05MzJjLTcwZjYzYzZmMDc0Mi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Süt seçimi: Klasik Barista Sütü, Laktozsuz, Yulaf Sütü (+60 ₺)",
+          "aktif": true
+        },
+        {
+          "ad": "Colombia La Loma Caturra",
+          "fiyat": 370,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzVkOTIzNGVmLTU5NmYtNGI0OC05YzMxLTI1MWRlNmQ5ZWJiNC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Method: Washed\nHindistan Cevizi Yağı, Bubblegum, Kayısı, Ahududu",
+          "aktif": true
+        },
+        {
+          "ad": "Colombia La Loma Sidra",
+          "fiyat": 390,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzVkOTIzNGVmLTU5NmYtNGI0OC05YzMxLTI1MWRlNmQ5ZWJiNC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Method: Washed\nYasemin, Gül, Japon Şeftalisi, Şeker Kamışı",
+          "aktif": true
+        },
+        {
+          "ad": "Colombia Monteblanco Citrullus",
+          "fiyat": 370,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzVkOTIzNGVmLTU5NmYtNGI0OC05YzMxLTI1MWRlNmQ5ZWJiNC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+          "aciklama": "Method: Washed\nKavun, Vanilya, Ananas, Muz, Karpuz, Lychee",
+          "aktif": true
+        }
+      ]
     },
     {
       "ad": "Kahveler",
