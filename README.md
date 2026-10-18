@@ -6,7 +6,8 @@ GitHub Pages'te `main` dalının kökünden yayınlanır: https://omerkartli.git
 - `index.html` — ana sayfa (masa ayırtma formu hazır WhatsApp mesajı oluşturur)
 - `menu.html` — menü sayfası; kategorileri, ürünleri ve fotoğrafları `menu.json` ve `images/`'ten okur
 - `menu.json` — kategoriler, alt kategoriler, ürünler, ilaveler ve alerjen notu
-- `images/` — ürün fotoğrafları (panelden yüklenir)
+- `icerik.json` — ana sayfadaki fotoğraf galerisi ve müşteri yorumları (panelde "Ana sayfa içeriği")
+- `images/` — ürün ve galeri fotoğrafları (panelden yüklenir)
 - `.pages.yml` — yönetim paneli (Pages CMS) ayarları
 
 Sayfalar arama motorlarına açıktır (`noindex` kaldırıldı, 18 Ekim 2026). Yapılacaklar ve

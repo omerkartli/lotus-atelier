@@ -140,3 +140,45 @@ content:
         label: Alerjen notu
         description: Menünün en altında görünür.
         type: string
+
+  - name: icerik
+    label: Ana sayfa içeriği
+    type: file
+    path: icerik.json
+    format: json
+    fields:
+      - name: galeri
+        label: Fotoğraf galerisi
+        description: Ana sayfadaki kayan fotoğraflar. Listedeki sıra, gösterim sırasıdır; sürükleyerek değiştirilir.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{alt}"
+        fields:
+          - name: foto
+            label: Fotoğraf
+            type: image
+            required: true
+          - name: alt
+            label: Fotoğraf açıklaması
+            description: Görme engelliler ve arama motorları için kısa bir cümle. Örn. "Çilekli milkshake".
+            type: string
+      - name: yorumlar
+        label: Müşteri yorumları
+        description: Ana sayfadaki yorumlar bölümü. Hiç yorum yoksa bölüm görünmez.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{ad}"
+        fields:
+          - name: yorum
+            label: Yorum
+            type: text
+            required: true
+          - name: ad
+            label: Ad ve soyadın ilk harfi
+            description: Örn. "Ahmet K."
+            type: string
+            required: true

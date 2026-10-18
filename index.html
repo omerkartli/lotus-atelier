@@ -169,6 +169,21 @@
   .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
   .info-item{display:flex;gap:14px;align-items:flex-start;padding:20px;border-radius:16px;background:var(--surface);border:1px solid var(--line);min-width:0}
   .info-item svg{flex:none;width:22px;height:22px;color:var(--accent);margin-top:2px}
+  .gallery .head{margin-bottom:24px}
+  .carousel{position:relative}
+  .car-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 14px;margin-inline:-2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .car-track::-webkit-scrollbar{display:none}
+  .car-item{flex:0 0 min(78%,340px);scroll-snap-align:start;margin:0;aspect-ratio:1/1;border-radius:var(--radius);overflow:hidden;background:var(--tint);box-shadow:var(--shadow)}
+  .car-item img{width:100%;height:100%;object-fit:cover;display:block}
+  .car-btn{position:absolute;top:calc(50% - 7px);translate:0 -50%;width:46px;height:46px;border-radius:50%;border:0;background:var(--glass);backdrop-filter:blur(6px);color:var(--heading);box-shadow:var(--shadow);font-size:28px;line-height:1;display:grid;place-items:center;padding-bottom:3px}
+  .car-btn.prev{left:-10px}.car-btn.next{right:-10px}
+  .car-btn:hover{background:var(--surface)}
+  .review{flex:0 0 min(86%,350px);scroll-snap-align:start;margin:0;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:26px 26px 22px;display:flex;flex-direction:column;gap:16px;min-width:0}
+  .review::before{content:"\201C";font-family:var(--display);font-size:56px;line-height:.6;color:var(--accent);height:24px}
+  .review blockquote{margin:0;flex:1;font-size:16px;line-height:1.65;color:var(--ink);overflow-wrap:anywhere}
+  .review figcaption{font-weight:700;color:var(--heading);font-size:15px}
+  .head .more{color:var(--accent);font-weight:600}
+  .head .more:hover{text-decoration:underline}
   .loyalty-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
   .loyalty-grid>*{min-width:0}
   .loyalty h2{font-family:var(--display);font-weight:600;font-size:clamp(34px,4.5vw,48px);line-height:1.1;color:var(--heading);margin:10px 0 14px}
@@ -280,7 +295,8 @@
   .menu-fab{position:fixed;right:16px;top:84px;z-index:45;display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--on-accent);border-radius:999px;padding:11px 18px;font-weight:700;font-size:15px;box-shadow:var(--shadow)}
   .menu-fab:hover{background:var(--accent-hover)}
   .menu-fab svg{width:18px;height:18px}
-  @media (max-width:600px){.menu-fab{top:auto;bottom:82px}}
+  @media (max-width:600px){.menu-fab{top:auto;bottom:82px}.car-btn{display:none}.car-item{flex-basis:78%}}
+  .reviews{padding-block:6px 14px}
   @media (max-width:600px){
     .loyalty-card{padding:16px;gap:12px;grid-template-columns:.85fr 1.4fr}
     .lc-title{font-size:26px}.lc-title b{font-size:12px}
@@ -378,6 +394,20 @@
     </div>
   </section>
 
+  <section class="block gallery" id="galeri" hidden>
+    <div class="wrap">
+      <div class="head">
+        <h2>Lotus'tan kareler</h2>
+        <p>Tatlılarımızdan, içeceklerimizden ve mekânımızdan birkaç kare.</p>
+      </div>
+      <div class="carousel" role="region" aria-roledescription="galeri" aria-label="Fotoğraf galerisi">
+        <div class="car-track" id="carTrack" tabindex="0"></div>
+        <button class="car-btn prev" type="button" id="carPrev" aria-label="Önceki fotoğraf">&#8249;</button>
+        <button class="car-btn next" type="button" id="carNext" aria-label="Sonraki fotoğraf">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
   <section class="block why" id="mekan">
     <div class="wrap">
       <div class="head">
@@ -426,6 +456,20 @@
           <span class="stamp on"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8c4 5 6 9 6 14s-3 9-6 11c-3-2-6-6-6-11s2-9 6-14z"/><path d="M18 26c-5-1-9-4-11-9 6 0 10 2 12 6M30 26c5-1 9-4 11-9-6 0-10 2-12 6"/><path d="M10 36c5 3 9 4 14 4s9-1 14-4"/></svg></span><span class="stamp"></span><span class="stamp"></span><span class="stamp"></span>
           <span class="stamp"></span><span class="stamp"></span><span class="stamp"></span><span class="stamp"></span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block why" id="yorumlar" hidden>
+    <div class="wrap">
+      <div class="head">
+        <h2>Misafirlerimiz ne diyor?</h2>
+        <p>Google yorumlarından seçmeler · <a class="more" href="https://www.google.com/search?q=lotus+atelier+chocolat+ormank%C3%B6y+%C3%A7ekmek%C3%B6y+yorumlar%C4%B1" target="_blank" rel="noopener">tüm yorumları gör &rarr;</a></p>
+      </div>
+      <div class="carousel" role="region" aria-roledescription="galeri" aria-label="Müşteri yorumları">
+        <div class="car-track reviews" id="reviewList" tabindex="0"></div>
+        <button class="car-btn prev" type="button" id="revPrev" aria-label="Önceki yorum">&#8249;</button>
+        <button class="car-btn next" type="button" id="revNext" aria-label="Sonraki yorum">&#8250;</button>
       </div>
     </div>
   </section>
@@ -517,6 +561,59 @@
 
 <script>
   // İletişim numarası (ülke koduyla, örn. 905xxxxxxxxx). Boşsa WhatsApp butonu gizlenir.
+  // Ana sayfa içeriği (galeri ve yorumlar) icerik.json'dan gelir; panelden (Pages CMS) yönetilir.
+  (async function loadContent(){
+    let d;
+    try{
+      const r = await fetch("icerik.json", {cache:"no-cache"});
+      if(!r.ok) return;
+      d = await r.json();
+    }catch(_){ return; }
+    const esc = x => String(x).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+    const fotos = (d.galeri || []).filter(g => g && g.foto);
+    if(fotos.length){
+      const track = document.getElementById("carTrack");
+      track.innerHTML = fotos.map(g => `<figure class="car-item"><img src="${esc(g.foto)}" alt="${esc(g.alt || "")}" loading="lazy" width="900" height="900" onerror="this.parentNode.remove()"></figure>`).join("");
+      document.getElementById("galeri").hidden = false;
+      initCarousel(track, "carPrev", "carNext", true);
+    }
+
+    const yorumlar = (d.yorumlar || []).filter(y => y && y.yorum);
+    if(yorumlar.length){
+      document.getElementById("reviewList").innerHTML = yorumlar.map(y =>
+        `<figure class="review"><blockquote><p>${esc(y.yorum)}</p></blockquote>${y.ad ? `<figcaption>${esc(y.ad)}</figcaption>` : ""}</figure>`).join("");
+      document.getElementById("yorumlar").hidden = false;
+      initCarousel(document.getElementById("reviewList"), "revPrev", "revNext", false);
+    }
+  })();
+
+  function initCarousel(track, prevId, nextId, auto){
+    const wrap = track.parentNode;
+    const step = () => { const it = track.firstElementChild; return it ? it.getBoundingClientRect().width + 14 : 300; };
+    const go = dir => {
+      const max = track.scrollWidth - track.clientWidth;
+      let x = track.scrollLeft + dir * step();
+      if(dir > 0 && track.scrollLeft >= max - 4) x = 0;
+      else if(dir < 0 && track.scrollLeft <= 4) x = max;
+      track.scrollTo({left:x, behavior:"smooth"});
+    };
+    document.getElementById(nextId).addEventListener("click", () => go(1));
+    document.getElementById(prevId).addEventListener("click", () => go(-1));
+    track.addEventListener("keydown", e => {
+      if(e.key === "ArrowRight"){ e.preventDefault(); go(1); }
+      if(e.key === "ArrowLeft"){ e.preventDefault(); go(-1); }
+    });
+    // Otomatik kayma: dokunma/üzerine gelme/odak sırasında durur; hareketi azalt tercihinde hiç başlamaz.
+    if(!auto || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let timer, resume;
+    const stop = () => { clearInterval(timer); clearTimeout(resume); };
+    const start = () => { stop(); timer = setInterval(() => { if(!document.hidden) go(1); }, 4500); };
+    ["mouseenter","focusin","touchstart","pointerdown"].forEach(ev => wrap.addEventListener(ev, stop, {passive:true}));
+    ["mouseleave","focusout","touchend"].forEach(ev => wrap.addEventListener(ev, () => { clearTimeout(resume); resume = setTimeout(start, 3000); }, {passive:true}));
+    start();
+  }
+
   const WA_NUMBER = "905444824334";
   const SLOTS = ["09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"];
 

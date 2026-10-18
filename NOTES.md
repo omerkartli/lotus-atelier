@@ -43,6 +43,11 @@ Bu dosya, projeye bir süre ara verince hatırlanması gerekenleri tutar.
 - **Sadakat kartı metni:** Kart fotoğrafından yalnızca "8 tatlı alana 1 tatlı hediye" ve "*Shareable tatlılar hariç"
   biliniyor. Sitedeki "siparişinizi verirken kartınızı bize gösterin" ve "8 mühür dolunca bir tatlı hediye"
   cümleleri bundan çıkarıldı; hangi tatlıların "shareable" sayıldığı ve mühür kuralı işyerinden teyit edilmeli (`index.html`, `#sadakat`).
+- **Müşteri yorumları (`icerik.json`):** Google yorumlarından alındı; ad olarak "Ad + soyadın ilk harfi" kullanıldı.
+  İki yorumda çalışan adları geçiyor (Yasmin hanım, Rana ve Erkan); işletme uygun görmezse panelden düzenlenir.
+  Bahtiyar A.'nın yorumunun ikinci yarısı (oyun alanı girişine sürgülü kapı önerisi) sitede kullanılmadı; yorum "…" ile kısaltıldı.
+  Yorumlar işletmeye gösterilip onay alınmalı. Doğum günü masası fotoğrafında bir çocuğun adı ve doğum tarihi yazılı pano olduğu için
+  galeride yalnızca masaların olduğu alt kısım kullanıldı; izin varsa tam fotoğraf eklenebilir.
 - **Fotoğrafsız ürünler:** 27 ürünün fotoğrafı yok; panelden yüklenebilir.
 
 ## Teknik notlar

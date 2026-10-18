@@ -3,7 +3,7 @@
 
 - images/ içindeki jpg/jpeg/jfif/png dosyaları webp olur (en uzun kenar MAX_SIDE'ı geçmez), özgün dosya silinir.
 - Zaten webp olup MAX_SIDE'dan büyük olanlar yerinde küçültülür.
-- menu.json'daki "foto" yolları yeni dosya adlarına güncellenir. Fotoğraf yüklendikten sonra menü
+- menu.json ve icerik.json'daki "foto" yolları yeni dosya adlarına güncellenir. Fotoğraf yüklendikten sonra menü
   kaydedilirse eski adla yazılan yol da (webp'si varsa) düzeltilir; bu yüzden betik tekrar çalıştırılabilir.
 """
 import json
@@ -12,7 +12,7 @@ from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
 IMAGES = ROOT / "images"
-MENU = ROOT / "menu.json"
+JSON_FILES = [ROOT / "menu.json", ROOT / "icerik.json"]
 RASTER = {".jpg", ".jpeg", ".jfif", ".png"}
 MAX_SIDE = 900
 QUALITY = 80
@@ -57,42 +57,45 @@ def optimize_images() -> dict:
     return renamed
 
 
-def fix_menu(renamed: dict) -> bool:
-    if not MENU.is_file():
-        return False
-    data = json.loads(MENU.read_text(encoding="utf-8"))
-    changed = False
+def fix_json(renamed: dict) -> bool:
+    any_changed = False
+    for path_ in JSON_FILES:
+        if not path_.is_file():
+            continue
+        data = json.loads(path_.read_text(encoding="utf-8"))
+        changed = False
 
-    def fix(path: str) -> str:
-        if path in renamed:
-            return renamed[path]
-        if path.startswith("images/") and not (ROOT / path).exists():
-            cand = (ROOT / path).with_suffix(".webp")
-            if cand.exists():
-                return f"images/{cand.name}"
-        return path
+        def fix(path: str) -> str:
+            if path in renamed:
+                return renamed[path]
+            if path.startswith("images/") and not (ROOT / path).exists():
+                cand = (ROOT / path).with_suffix(".webp")
+                if cand.exists():
+                    return f"images/{cand.name}"
+            return path
 
-    def walk(node):
-        nonlocal changed
-        if isinstance(node, dict):
-            for k, v in node.items():
-                if k == "foto" and isinstance(v, str) and v:
-                    new = fix(v)
-                    if new != v:
-                        node[k] = new
-                        changed = True
-                else:
-                    walk(v)
-        elif isinstance(node, list):
-            for x in node:
-                walk(x)
+        def walk(node):
+            nonlocal changed
+            if isinstance(node, dict):
+                for k, v in node.items():
+                    if k == "foto" and isinstance(v, str) and v:
+                        new = fix(v)
+                        if new != v:
+                            node[k] = new
+                            changed = True
+                    else:
+                        walk(v)
+            elif isinstance(node, list):
+                for x in node:
+                    walk(x)
 
-    walk(data)
-    if changed:
-        MENU.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print("menu.json güncellendi")
-    return changed
+        walk(data)
+        if changed:
+            path_.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            print(f"{path_.name} güncellendi")
+            any_changed = True
+    return any_changed
 
 
 if __name__ == "__main__":
-    fix_menu(optimize_images())
+    fix_json(optimize_images())
