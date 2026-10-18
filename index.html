@@ -162,7 +162,7 @@
   .salon h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4vw,42px);line-height:1.1;color:var(--heading);margin:10px 0 14px}
   .salon p{color:var(--muted);margin-bottom:22px}
   a.info-item:hover{border-color:var(--accent)}
-  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
   .info-item{display:flex;gap:14px;align-items:flex-start;padding:20px;border-radius:16px;background:var(--surface);border:1px solid var(--line);min-width:0}
   .info-item svg{flex:none;width:22px;height:22px;color:var(--accent);margin-top:2px}
   .info-item small{color:var(--muted);font-size:13px}
@@ -387,6 +387,10 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           <div><b>Çalışma saatleri</b>Kapanış saati 00:30</div>
         </div>
+        <a class="info-item" href="https://www.instagram.com/lotusatelier.ist/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+          <div><b>Instagram</b>@lotusatelier.ist<br><small>Bizi takip edin</small></div>
+        </a>
       </div>
     </div>
   </section>
@@ -395,7 +399,7 @@
 <footer>
   <div class="wrap foot">
     <span class="logo"><img class="mark" src="assets/logo-icon.webp" alt="" width="44" height="44"><span class="word"><b>LOTUS</b><i>Atelier Chocolat</i></span></span>
-    <span>Masa talepleri mesajla iletilir.</span>
+    <span>Masa talepleri mesajla iletilir. · <a href="https://www.instagram.com/lotusatelier.ist/" target="_blank" rel="noopener"><u>Instagram</u></a></span>
   </div>
 </footer>
 
