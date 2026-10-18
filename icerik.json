@@ -19,48 +19,63 @@
     {
       "foto": "images/galeri-fistikli-tatli.webp",
       "alt": "Beyaz çikolata ve Antep fıstığı kaplı tatlı"
+    },
+    {
+      "foto": "images/yesilicece.webp"
+    },
+    {
+      "foto": "images/karısık.webp"
+    },
+    {
+      "foto": "images/köse.webp"
+    },
+    {
+      "foto": "images/kruvas.webp"
+    },
+    {
+      "foto": "images/maka.webp"
     }
   ],
   "yorumlar": [
     {
-      "ad": "Yasemin A.",
-      "yorum": "Şiddetle tavsiye ederim. Oğlumun doğum gününü kutladık. 16 kişiydik… Kahvaltıyla başladık. Çocuklar çok eğlendi oyun alanı çok yeterliydi. Çok temiz bir işletme, her şey çok lezzetliydi. Güler yüzlü ekipten mutfaktaki şef ablaya kadar hepsi harikaydı… Şahane ortam! Ellerinize sağlık! Çok teşekkür ederiz! 🥰🙏👏🏻"
+      "yorum": "Şiddetle tavsiye ederim. Oğlumun doğum gününü kutladık. 16 kişiydik… Kahvaltıyla başladık. Çocuklar çok eğlendi oyun alanı çok yeterliydi. Çok temiz bir işletme, her şey çok lezzetliydi. Güler yüzlü ekipten mutfaktaki şef ablaya kadar hepsi harikaydı… Şahane ortam! Ellerinize sağlık! Çok teşekkür ederiz! 🥰🙏👏🏻",
+      "ad": "Yasemin A."
     },
     {
-      "ad": "Derya M.",
-      "yorum": "Mekan çok ferah ve temiz. Çalışanlar güler yüzlü ve ilgili. Biz ailecek geç gittik oyun alanı boştu bizim kızlar diledikleri gibi oynadı. Tatlımızla ilgili ufak bir sorun yaşadık ve hemen geri dönüş sağladılar. Memnun kalarak ayrıldığım bir yer oldu. Teşekkürler 🙏"
+      "yorum": "Mekan çok ferah ve temiz. Çalışanlar güler yüzlü ve ilgili. Biz ailecek geç gittik oyun alanı boştu bizim kızlar diledikleri gibi oynadı. Tatlımızla ilgili ufak bir sorun yaşadık ve hemen geri dönüş sağladılar. Memnun kalarak ayrıldığım bir yer oldu. Teşekkürler 🙏",
+      "ad": "Derya M."
     },
     {
-      "ad": "Batuhan K.",
-      "yorum": "Yol üstünde karnımız acıktığı için uğradık buraya; çok lezzetli kruvasanları ile kahvaltımızı yaptık. Servis hızlı, çalışanlar güler yüzlü ve tertemiz bir işletmeydi. Tatlı denemeden ayrılmayın derim. İşletme vizyonu ile müzikler birebirdi :)"
+      "yorum": "Yol üstünde karnımız acıktığı için uğradık buraya; çok lezzetli kruvasanları ile kahvaltımızı yaptık. Servis hızlı, çalışanlar güler yüzlü ve tertemiz bir işletmeydi. Tatlı denemeden ayrılmayın derim. İşletme vizyonu ile müzikler birebirdi :)",
+      "ad": "Batuhan K."
     },
     {
-      "ad": "Feyza K.",
-      "yorum": "Serpme kahvaltı için geldik her şey çok güzeldi. Servisimiz ile ilgilenen hanımefendi çok sıcak kanlıydı, kahvaltı doyurucuydu, ayrıca biten bütün malzemeler yenileniyor. Özellikle pankek tabağı çocukları mest etti"
+      "yorum": "Serpme kahvaltı için geldik her şey çok güzeldi. Servisimiz ile ilgilenen hanımefendi çok sıcak kanlıydı, kahvaltı doyurucuydu, ayrıca biten bütün malzemeler yenileniyor. Özellikle pankek tabağı çocukları mest etti",
+      "ad": "Feyza K."
     },
     {
-      "ad": "Bahtiyar A.",
-      "yorum": "Oyun alanı olması büyük artı, kahve deneyimi oldukça keyifliydi…"
+      "yorum": "Oyun alanı olması büyük artı, kahve deneyimi oldukça keyifliydi…",
+      "ad": "Bahtiyar A."
     },
     {
-      "ad": "Aynur A.",
-      "yorum": "3 aile geldik ve bütün samimiyetle söylüyorum biz anneler olarak çok rahat ettik. Ekip arkadaşınız olan, Yasmin hanıma da ayrıca teşekkür ederiz güler yüzü ve samimiyeti için. Uzun zamandır içimize herşeyiyle sinen bi mekan görmeyeli çok olmuştu. Çocukların oyun alanı ve sıcak mekanı için mutlaka deneyin."
+      "yorum": "3 aile geldik ve bütün samimiyetle söylüyorum biz anneler olarak çok rahat ettik. Ekip arkadaşınız olan, Yasmin hanıma da ayrıca teşekkür ederiz güler yüzü ve samimiyeti için. Uzun zamandır içimize herşeyiyle sinen bi mekan görmeyeli çok olmuştu. Çocukların oyun alanı ve sıcak mekanı için mutlaka deneyin.",
+      "ad": "Aynur A."
     },
     {
-      "ad": "Hamdi",
-      "yorum": "Farklı tatlılar denemek istiyorsanız, lezzeti de güzel olsun diyorsanız denemeniz gereken bir yer. İç tasarım göze hoş geliyor ve ferah da."
+      "yorum": "Farklı tatlılar denemek istiyorsanız, lezzeti de güzel olsun diyorsanız denemeniz gereken bir yer. İç tasarım göze hoş geliyor ve ferah da.",
+      "ad": "Hamdi"
     },
     {
-      "ad": "Emre K.",
-      "yorum": "İlk açıldığı günden beri daimi müşterisi olduğum bu mekan puan olarak en iyisini hallediyor işletmecisi olsun ortakları olsun hem çok kibar hemde çok cana yakın insanlar iyiki Lotus Atelier'i açmışlar teşekkürler herkese tavsiye ederim."
+      "yorum": "İlk açıldığı günden beri daimi müşterisi olduğum bu mekan puan olarak en iyisini hallediyor işletmecisi olsun ortakları olsun hem çok kibar hemde çok cana yakın insanlar iyiki Lotus Atelier'i açmışlar teşekkürler herkese tavsiye ederim.",
+      "ad": "Emre K."
     },
     {
-      "ad": "Ahmet Ç.",
-      "yorum": "İyi ki gitmişiz. Çocuklar için oyun yeri var, çocuklar eğlendi. Biz kahvemizi içtik, tatlımızı yedik. Çalışanlardan Rana ve Erkan zaten kendi evimiz gibi hissettirdi. Güleryüzlü çalışan görmeyeli uzun zaman olmuştu. Tatlılar çok iyi, kahveler şahane."
+      "yorum": "İyi ki gitmişiz. Çocuklar için oyun yeri var, çocuklar eğlendi. Biz kahvemizi içtik, tatlımızı yedik. Çalışanlardan Rana ve Erkan zaten kendi evimiz gibi hissettirdi. Güleryüzlü çalışan görmeyeli uzun zaman olmuştu. Tatlılar çok iyi, kahveler şahane.",
+      "ad": "Ahmet Ç."
     },
     {
-      "ad": "Bergüzar",
-      "yorum": "Harika bir kafe. Atmosferi mükemmel, çocuklarınız için oyun alanı ve oyun ablası bile mevcut. Kahveler çok güzel ve baristalar inanılmaz tatlı her biri çok cana yakın ve kendi aralarında da çok iyiler, herkese tavsiye ederim."
+      "yorum": "Harika bir kafe. Atmosferi mükemmel, çocuklarınız için oyun alanı ve oyun ablası bile mevcut. Kahveler çok güzel ve baristalar inanılmaz tatlı her biri çok cana yakın ve kendi aralarında da çok iyiler, herkese tavsiye ederim.",
+      "ad": "Bergüzar"
     }
   ]
 }
