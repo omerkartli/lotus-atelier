@@ -1,0 +1,134 @@
+# Pages CMS yönetim paneli ayarları (https://app.pagescms.org)
+# Menü yapısı: Kategori → (isteğe bağlı) Alt kategori → Ürünler. Sıra, listedeki sıradır;
+# kategori, alt kategori ve ürünler listede sürüklenerek yeniden sıralanır.
+media:
+  input: images
+  output: images
+  categories: [image]
+
+content:
+  - name: menu
+    label: Menü
+    type: file
+    path: menu.json
+    format: json
+    fields:
+      - name: gruplar
+        label: Kategoriler
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{ad}"
+        fields:
+          - name: ad
+            label: Kategori adı
+            type: string
+            required: true
+          - name: not
+            label: Kategori notu
+            description: Kategorinin en üstünde bilgi kutusu olarak görünür. Boş bırakılabilir.
+            type: text
+          - name: ilaveler
+            label: İlaveler kutusunu göster
+            description: Açıksa bu kategorinin altında "İlaveler" fiyat listesi görünür.
+            type: boolean
+            default: false
+          - name: urunler
+            label: Ürünler (doğrudan bu kategoride)
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{ad} · {fiyat} ₺"
+            fields:
+              - name: ad
+                label: Ürün adı
+                type: string
+                required: true
+              - name: fiyat
+                label: Fiyat (₺)
+                type: number
+                required: true
+              - name: fiyatNot
+                label: Fiyat notu
+                description: Fiyatın yanında küçük görünür, ör. "kişi başı". Boş bırakılabilir.
+                type: string
+              - name: foto
+                label: Fotoğraf
+                description: Boş bırakılırsa ürün fotoğrafsız görünür.
+                type: image
+              - name: aciklama
+                label: Açıklama / içindekiler
+                type: text
+              - name: aktif
+                label: Menüde göster
+                description: Kapatırsanız ürün silinmeden menüden gizlenir (örn. tükendiğinde).
+                type: boolean
+                default: true
+          - name: altlar
+            label: Alt kategoriler
+            description: Varsa kategorinin üstünde çipler olarak görünür.
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{ad}"
+            fields:
+              - name: ad
+                label: Alt kategori adı
+                type: string
+                required: true
+              - name: urunler
+                label: Ürünler
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{ad} · {fiyat} ₺"
+                fields:
+                  - name: ad
+                    label: Ürün adı
+                    type: string
+                    required: true
+                  - name: fiyat
+                    label: Fiyat (₺)
+                    type: number
+                    required: true
+                  - name: fiyatNot
+                    label: Fiyat notu
+                    description: Fiyatın yanında küçük görünür, ör. "kişi başı". Boş bırakılabilir.
+                    type: string
+                  - name: foto
+                    label: Fotoğraf
+                    description: Boş bırakılırsa ürün fotoğrafsız görünür.
+                    type: image
+                  - name: aciklama
+                    label: Açıklama / içindekiler
+                    type: text
+                  - name: aktif
+                    label: Menüde göster
+                    description: Kapatırsanız ürün silinmeden menüden gizlenir (örn. tükendiğinde).
+                    type: boolean
+                    default: true
+      - name: ilaveler
+        label: İlaveler
+        description: Tatlı kategorilerinin altında gösterilen ilave fiyat listesi.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{ad} · {fiyat} ₺"
+        fields:
+          - name: ad
+            label: İlave adı
+            type: string
+            required: true
+          - name: fiyat
+            label: Fiyat (₺)
+            type: number
+            required: true
+      - name: alerjen
+        label: Alerjen notu
+        description: Menünün en altında görünür.
+        type: string
