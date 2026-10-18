@@ -31,6 +31,9 @@ Bu dosya, projeye bir süre ara verince hatırlanması gerekenleri tutar.
 6. Google Search Console'a siteyi ekleyip sitemap'i gönder; Google işletme profilindeki
    "Web sitesi" alanına yeni adresi yaz (şu an boş, profilde "Web sitesi ekle" görünüyor).
 7. Menü sayfası `menu.json`'u göreli adresle okuduğu için ayrıca bir değişiklik gerekmez.
+8. `qr/` klasöründeki QR kodları yeni adresle yeniden üret (ana sayfa ve `menu.html`; PNG + SVG).
+   Şu an `omerkartli.github.io/lotus-atelier/` adresine bağlılar; **baskıya girmeden önce** alan adı
+   gelmişse yenilerini bas. Üretim: `qrcode` kütüphanesi, hata düzeltme seviyesi H.
 
 ## İşyeri sahibinden teyit beklenenler
 
