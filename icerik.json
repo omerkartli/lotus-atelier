@@ -21,22 +21,28 @@
       "alt": "Beyaz çikolata ve Antep fıstığı kaplı tatlı"
     },
     {
-      "foto": "images/yesilicece.webp"
+      "foto": "images/yesilicece.webp",
+      "alt": "Buzlu matcha latte, yanında çilek sosu"
     },
     {
-      "foto": "images/karısık.webp"
+      "foto": "images/karısık.webp",
+      "alt": "Kruvasan, waffle ve brownie karışık tabağı; meyve ve soslarla"
     },
     {
-      "foto": "images/köse.webp"
+      "foto": "images/köse.webp",
+      "alt": "Ahşap kemer formlu, minderli köşe oturma alanı"
     },
     {
-      "foto": "images/kruvas.webp"
+      "foto": "images/kruvas.webp",
+      "alt": "Tereyağlı sade kruvasan"
     },
     {
-      "foto": "images/maka.webp"
+      "foto": "images/maka.webp",
+      "alt": "Frambuazlı pankek kulesi"
     },
     {
-      "foto": "images/uzun.webp"
+      "foto": "images/uzun.webp",
+      "alt": "Garson tabağında fıstıklı yeşil rulo tatlı ve soslar"
     }
   ],
   "yorumlar": [
