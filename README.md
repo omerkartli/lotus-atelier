@@ -9,8 +9,8 @@ GitHub Pages'te `main` dalının kökünden yayınlanır: https://omerkartli.git
 - `images/` — ürün fotoğrafları (panelden yüklenir)
 - `.pages.yml` — yönetim paneli (Pages CMS) ayarları
 
-Sayfalar `noindex, nofollow` taşır; telefon, adres ve çalışma saatleri gerçek bilgilerle
-doldurulana kadar arama motorlarına açılmaz.
+Sayfalar arama motorlarına açıktır (`noindex` kaldırıldı, 18 Ekim 2026). Yapılacaklar ve
+işyeri sahibinden beklenenler için `NOTES.md`'ye bakın.
 
 ## Yönetim paneli
 
