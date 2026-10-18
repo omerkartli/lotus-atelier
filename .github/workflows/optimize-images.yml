@@ -1,0 +1,43 @@
+# Panelden (Pages CMS) yüklenen fotoğrafları küçültür ve webp'ye çevirir (_tools/optimize_images.py),
+# menu.json'daki yolları günceller ve sonucu main'e kaydeder.
+name: Fotoğrafları küçült
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - images/**
+      - menu.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fotograflari-kucult
+  cancel-in-progress: false
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pillow kur
+        run: pip install pillow
+      - name: Fotoğrafları işle
+        run: python3 _tools/optimize_images.py
+      - name: Değişiklik varsa kaydet
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Değişiklik yok."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Fotoğrafları küçült ve webp'ye çevir (otomatik)"
+          git pull --rebase origin main
+          git push origin HEAD:main
