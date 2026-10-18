@@ -146,13 +146,6 @@
           "aciklama": "Antep Fıstığı Ezmesi, Kesme Dondurma, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
           "aktif": true,
           "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2UxNDgzMGYwLTMyNzYtNGQzNi05MmU4LWVmMmUxNWE2NGE0Ni5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
-        },
-        {
-          "ad": "Adrenalin dene",
-          "fiyat": 700,
-          "foto": "images/SCR-20261019-bomq-2.webp",
-          "aciklama": "Antep Fıstığı Ezmesi, Kesme Dondurma, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-          "aktif": true
         }
       ]
     },
@@ -330,89 +323,113 @@
           ]
         },
         {
-          "ad": "Cheesecake"
+          "ad": "Cheesecake",
+          "urunler": []
         },
         {
-          "ad": "Kruvasan"
+          "ad": "Kruvasan",
+          "urunler": []
         },
         {
-          "ad": "Sütlü Tatlılar"
+          "ad": "Sütlü Tatlılar",
+          "urunler": []
         },
         {
-          "ad": "Mini Tatlar"
+          "ad": "Mini Tatlar",
+          "urunler": []
         }
-      ]
+      ],
+      "urunler": []
     },
     {
       "ad": "Filtre & Demleme Kahveler",
-      "ilaveler": false
+      "ilaveler": false,
+      "urunler": []
     },
     {
       "ad": "Kahveler",
       "ilaveler": false,
       "altlar": [
         {
-          "ad": "Espresso"
+          "ad": "Espresso",
+          "urunler": []
         },
         {
-          "ad": "Soğuk Kahveler"
+          "ad": "Soğuk Kahveler",
+          "urunler": []
         },
         {
-          "ad": "Japanese Iced Coffee"
+          "ad": "Japanese Iced Coffee",
+          "urunler": []
         }
-      ]
+      ],
+      "urunler": []
     },
     {
       "ad": "Yeni Nesil Alternatifler",
-      "ilaveler": false
+      "ilaveler": false,
+      "urunler": []
     },
     {
       "ad": "İçecekler",
       "ilaveler": false,
       "altlar": [
         {
-          "ad": "Soft İçecekler"
+          "ad": "Soft İçecekler",
+          "urunler": []
         },
         {
-          "ad": "Soğuk İçecekler"
+          "ad": "Soğuk İçecekler",
+          "urunler": []
         },
         {
-          "ad": "Frozen"
+          "ad": "Frozen",
+          "urunler": []
         },
         {
-          "ad": "Milkshake"
+          "ad": "Milkshake",
+          "urunler": []
         },
         {
-          "ad": "Mocktails"
+          "ad": "Mocktails",
+          "urunler": []
         },
         {
-          "ad": "Sıcak İçecekler"
+          "ad": "Sıcak İçecekler",
+          "urunler": []
         }
-      ]
+      ],
+      "urunler": []
     },
     {
       "ad": "Dondurmalar",
-      "ilaveler": false
+      "ilaveler": false,
+      "urunler": []
     },
     {
       "ad": "Çaylar",
       "ilaveler": false,
       "altlar": [
         {
-          "ad": "Bitki Çayları"
+          "ad": "Bitki Çayları",
+          "urunler": []
         },
         {
-          "ad": "Siyah Çaylar"
+          "ad": "Siyah Çaylar",
+          "urunler": []
         }
-      ]
+      ],
+      "urunler": []
     },
     {
       "ad": "Çikolata Kutuları",
-      "ilaveler": false
+      "ilaveler": false,
+      "urunler": []
     },
     {
       "ad": "Ekstralar",
-      "ilaveler": false
+      "ilaveler": false,
+      "urunler": []
     }
   ],
   "ilaveler": [
