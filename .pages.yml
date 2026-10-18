@@ -55,9 +55,13 @@ content:
                 description: Fiyatın yanında küçük görünür, ör. "kişi başı". Boş bırakılabilir.
                 type: string
               - name: foto
-                label: Fotoğraf
-                description: Boş bırakılırsa ürün fotoğrafsız görünür.
+                label: Fotoğraf (yükle)
+                description: Telefondan veya bilgisayardan yükleyin. Boş bırakılırsa ürün fotoğrafsız görünür.
                 type: image
+              - name: fotoUrl
+                label: Fotoğraf linki (isteğe bağlı)
+                description: Fotoğraf başka bir sitede duruyorsa buraya adresini yapıştırın. Yükleme yapıldıysa o kullanılır.
+                type: string
               - name: aciklama
                 label: Açıklama / içindekiler
                 type: text
@@ -100,9 +104,13 @@ content:
                     description: Fiyatın yanında küçük görünür, ör. "kişi başı". Boş bırakılabilir.
                     type: string
                   - name: foto
-                    label: Fotoğraf
-                    description: Boş bırakılırsa ürün fotoğrafsız görünür.
+                    label: Fotoğraf (yükle)
+                    description: Telefondan veya bilgisayardan yükleyin. Boş bırakılırsa ürün fotoğrafsız görünür.
                     type: image
+                  - name: fotoUrl
+                    label: Fotoğraf linki (isteğe bağlı)
+                    description: Fotoğraf başka bir sitede duruyorsa buraya adresini yapıştırın. Yükleme yapıldıysa o kullanılır.
+                    type: string
                   - name: aciklama
                     label: Açıklama / içindekiler
                     type: text

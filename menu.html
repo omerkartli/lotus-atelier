@@ -201,7 +201,7 @@
     (j.gruplar || []).forEach((g, i) => {
       const gid = "g" + i;
       const add = (list, a) => (list || []).filter(u => u.aktif !== false && u.ad).forEach(u => URUNLER.push({
-        ad: u.ad, aciklama: u.aciklama || "", fiyat: Number(u.fiyat) || 0, fiyatNot: u.fiyatNot || "", foto: abs(u.foto), grup: gid, alt: a }));
+        ad: u.ad, aciklama: u.aciklama || "", fiyat: Number(u.fiyat) || 0, fiyatNot: u.fiyatNot || "", foto: abs(u.foto || u.fotoUrl), grup: gid, alt: a }));
       add(g.urunler, "");
       (g.altlar || []).forEach((a, k) => add(a.urunler, gid + "a" + k));
       GRUPLAR.push({ id: gid, ad: g.ad, not: g.not || "", ilaveler: !!g.ilaveler,
