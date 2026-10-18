@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f1420">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <title>Lotus Atelier Chocolat Ormanköy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
   /* Layout: butik güzellik salonu — kemer (arch) formlu görseller, hizmet kartları, saat seçmeli randevu formu */
   :root{
@@ -15,8 +18,8 @@
     --surface:#ffffff;
     --tint:#f1ebdc;
     --tint-strong:#e3d9c0;
-    --accent:#2f5d3a;
-    --accent-hover:#22452b;
+    --accent:#14803a;
+    --accent-hover:#0f6a2f;
     --on-accent:#ffffff;
     --heading:#26402d;
     --gold:#8a5a3c;
@@ -38,7 +41,7 @@
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       --bg:#15201a;--surface:#1e2b23;--tint:#263629;--tint-strong:#33493a;
-      --accent:#9fd3a8;--accent-hover:#bfe6c6;--on-accent:#10261a;--heading:#e6f3e8;
+      --accent:#4ed17e;--accent-hover:#7ee3a0;--on-accent:#10261a;--heading:#e6f3e8;
       --gold:#d9a574;--rose:#d9a574;--ink:#ece7e2;--muted:#aaa89c;--line:#31423a;
       --wa:#2fb565;--on-wa:#0d2416;--scrim:rgba(0,0,0,.65);--glass:rgba(21,32,26,.88);
       --chip-bg:rgba(30,43,35,.92);--danger:#ef7b7b;--shadow:0 10px 30px -12px rgba(0,0,0,.6);
@@ -47,7 +50,7 @@
   }
   :root[data-theme="dark"]{
     --bg:#15201a;--surface:#1e2b23;--tint:#263629;--tint-strong:#33493a;
-    --accent:#9fd3a8;--accent-hover:#bfe6c6;--on-accent:#10261a;--heading:#e6f3e8;
+    --accent:#4ed17e;--accent-hover:#7ee3a0;--on-accent:#10261a;--heading:#e6f3e8;
     --gold:#d9a574;--rose:#d9a574;--ink:#ece7e2;--muted:#aaa89c;--line:#31423a;
     --wa:#2fb565;--on-wa:#0d2416;--scrim:rgba(0,0,0,.65);--glass:rgba(21,32,26,.88);
     --chip-bg:rgba(30,43,35,.92);--danger:#ef7b7b;--shadow:0 10px 30px -12px rgba(0,0,0,.6);
@@ -104,7 +107,7 @@
   .hero-art{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end}
   .arch{border-radius:999px 999px var(--radius) var(--radius);overflow:hidden;box-shadow:var(--shadow);display:grid;place-items:center}
   .arch svg{width:52%;height:auto;opacity:.9}
-  .arch.a1{aspect-ratio:3/5;background:linear-gradient(170deg,#d9e8d3,#2f5d3a)}
+  .arch.a1{aspect-ratio:3/5;background:linear-gradient(170deg,#c9efd6,#14803a)}
   .arch.a2{aspect-ratio:3/4;background:linear-gradient(170deg,#ead9c4,#6b4328);margin-bottom:34px}
   .badge{position:absolute;left:-18px;bottom:14px;background:var(--surface);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);font-size:13px;color:var(--muted)}
   .badge b{display:block;font-family:var(--display);font-size:28px;color:var(--heading);line-height:1.1;font-variant-numeric:lining-nums}
@@ -253,6 +256,29 @@
   .menu-fab:hover{background:var(--accent-hover)}
   .menu-fab svg{width:18px;height:18px}
   @media (max-width:600px){.menu-fab{top:auto;bottom:82px}}
+
+  /* Marka: tabeladaki yeşil (#1BA045), koyu zemin (#0F1420) ve nane renkli lotus ikonu */
+  :root{--brand:#1ba045;--brand-dark:#0f1420}
+  header{background:var(--brand-dark);border-bottom:1px solid #1d2638;backdrop-filter:none}
+  .nav{height:72px}
+  .logo{display:flex;align-items:center;gap:10px;color:var(--brand);white-space:nowrap}
+  .logo .mark{width:44px;height:44px;border-radius:50%;flex:none;display:block}
+  .logo .word{display:flex;flex-direction:column;line-height:1}
+  .logo b{font-family:"Playfair Display",var(--display);font-weight:700;font-size:28px;letter-spacing:.05em;color:var(--brand)}
+  .logo i{font-family:"Great Vibes","Brush Script MT",cursive;font-style:normal;font-size:21px;color:var(--brand);margin:-2px 0 0 18px}
+  .nav ul a{color:#e6efe8}
+  .nav ul a:hover{color:var(--brand)}
+  header .btn-primary{background:var(--brand);color:#04140a}
+  header .btn-primary:hover{background:#2bbd5b}
+  .back{color:#cfe9d6}
+  @media (max-width:600px){
+    .nav{height:64px}
+    .logo{gap:8px}
+    .logo .mark{width:38px;height:38px}
+    .logo b{font-size:23px}
+    .logo i{font-size:17px;margin-left:12px}
+  }
+  .arch img{width:56%;height:auto;border-radius:50%;opacity:.95}
 </style>
 </head>
 <body>
@@ -261,7 +287,7 @@
 
 <header>
   <div class="wrap nav">
-    <a href="#top" class="logo"><b>LOTUS</b><i>Atelier Chocolat</i></a>
+    <a href="#top" class="logo"><img class="mark" src="assets/logo-icon.webp" alt="" width="44" height="44"><span class="word"><b>LOTUS</b><i>Atelier Chocolat</i></span></a>
     <ul>
       <li><a href="menu.html">Menü</a></li>
       <li><a href="#mekan">Mekân</a></li>
@@ -289,7 +315,7 @@
         </div>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <div class="arch a1"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" style="color:#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8c4 5 6 9 6 14s-3 9-6 11c-3-2-6-6-6-11s2-9 6-14z"/><path d="M18 26c-5-1-9-4-11-9 6 0 10 2 12 6M30 26c5-1 9-4 11-9-6 0-10 2-12 6"/><path d="M10 36c5 3 9 4 14 4s9-1 14-4"/></svg></div>
+        <div class="arch a1"><img src="assets/logo-icon.webp" alt="" width="192" height="192"></div>
         <div class="arch a2"><svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20h24v8a10 10 0 0 1-10 10h-4a10 10 0 0 1-10-10z"/><path d="M34 22h3a4 4 0 0 1 0 8h-3M18 8c-2 2 2 4 0 6M24 8c-2 2 2 4 0 6M30 8c-2 2 2 4 0 6"/></svg></div>
         <div class="badge">Google'da<b>4,5 ★ · 78 yorum</b></div>
       </div>
@@ -370,7 +396,7 @@
 
 <footer>
   <div class="wrap foot">
-    <span class="logo"><b>LOTUS</b><i>Atelier Chocolat</i></span>
+    <span class="logo"><img class="mark" src="assets/logo-icon.webp" alt="" width="44" height="44"><span class="word"><b>LOTUS</b><i>Atelier Chocolat</i></span></span>
     <span>Masa talepleri mesajla iletilir. · <a href="https://omerkartli.github.io/dijital-cozumlerim/"><u>Dijital Çözümlerim ile hazırlandı</u></a></span>
   </div>
 </footer>
@@ -383,7 +409,7 @@
 
 <div class="overlay" id="overlay" hidden>
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-    <div class="m-img" style="background:linear-gradient(160deg,#d9e8d3,#2f5d3a)">
+    <div class="m-img" style="background:linear-gradient(160deg,#c9efd6,#14803a)">
       <span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8c4 5 6 9 6 14s-3 9-6 11c-3-2-6-6-6-11s2-9 6-14z"/><path d="M18 26c-5-1-9-4-11-9 6 0 10 2 12 6M30 26c5-1 9-4 11-9-6 0-10 2-12 6"/><path d="M10 36c5 3 9 4 14 4s9-1 14-4"/></svg></span>
       <div class="cap"><b>Masa Ayırt</b><span>Lotus Atelier Chocolat</span></div>
     </div>

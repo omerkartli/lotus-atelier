@@ -4,15 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f1420">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <title>Menü · Lotus Atelier Chocolat</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
   /* Menü sayfası: grup seçici (alt sayfa), arama, alt kategori çipleri, fotoğraflı ürün kartları */
   :root{
     --bg:#fbf8f2;--surface:#ffffff;--tint:#f1ebdc;--tint-strong:#e3d9c0;
-    --accent:#2f5d3a;--accent-hover:#22452b;--on-accent:#ffffff;--heading:#26402d;
+    --accent:#14803a;--accent-hover:#0f6a2f;--on-accent:#ffffff;--heading:#26402d;
     --gold:#8a5a3c;--ink:#2a2420;--muted:#766c62;--line:#e8e0d0;
     --scrim:rgba(38,64,45,.55);--glass:rgba(251,248,242,.9);
     --shadow:0 10px 30px -12px rgba(38,64,45,.28);
@@ -23,7 +26,7 @@
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       --bg:#15201a;--surface:#1e2b23;--tint:#263629;--tint-strong:#33493a;
-      --accent:#9fd3a8;--accent-hover:#bfe6c6;--on-accent:#10261a;--heading:#e6f3e8;
+      --accent:#4ed17e;--accent-hover:#7ee3a0;--on-accent:#10261a;--heading:#e6f3e8;
       --gold:#d9a574;--ink:#ece7e2;--muted:#aaa89c;--line:#31423a;
       --scrim:rgba(0,0,0,.65);--glass:rgba(21,32,26,.9);--shadow:0 10px 30px -12px rgba(0,0,0,.6);
       color-scheme:dark;
@@ -31,7 +34,7 @@
   }
   :root[data-theme="dark"]{
     --bg:#15201a;--surface:#1e2b23;--tint:#263629;--tint-strong:#33493a;
-    --accent:#9fd3a8;--accent-hover:#bfe6c6;--on-accent:#10261a;--heading:#e6f3e8;
+    --accent:#4ed17e;--accent-hover:#7ee3a0;--on-accent:#10261a;--heading:#e6f3e8;
     --gold:#d9a574;--ink:#ece7e2;--muted:#aaa89c;--line:#31423a;
     --scrim:rgba(0,0,0,.65);--glass:rgba(21,32,26,.9);--shadow:0 10px 30px -12px rgba(0,0,0,.6);
     color-scheme:dark;
@@ -113,6 +116,28 @@
     .overlay{padding:0;align-items:flex-end}
     .sheet{border-radius:22px 22px 0 0;max-width:none;max-height:88vh}
   }
+
+  /* Marka: tabeladaki yeşil (#1BA045), koyu zemin (#0F1420) ve nane renkli lotus ikonu */
+  :root{--brand:#1ba045;--brand-dark:#0f1420}
+  header{background:var(--brand-dark);border-bottom:1px solid #1d2638;backdrop-filter:none}
+  .nav{height:72px}
+  .logo{display:flex;align-items:center;gap:10px;color:var(--brand);white-space:nowrap}
+  .logo .mark{width:44px;height:44px;border-radius:50%;flex:none;display:block}
+  .logo .word{display:flex;flex-direction:column;line-height:1}
+  .logo b{font-family:"Playfair Display",var(--display);font-weight:700;font-size:28px;letter-spacing:.05em;color:var(--brand)}
+  .logo i{font-family:"Great Vibes","Brush Script MT",cursive;font-style:normal;font-size:21px;color:var(--brand);margin:-2px 0 0 18px}
+  .nav ul a{color:#e6efe8}
+  .nav ul a:hover{color:var(--brand)}
+  header .btn-primary{background:var(--brand);color:#04140a}
+  header .btn-primary:hover{background:#2bbd5b}
+  .back{color:#cfe9d6}
+  @media (max-width:600px){
+    .nav{height:64px}
+    .logo{gap:8px}
+    .logo .mark{width:38px;height:38px}
+    .logo b{font-size:23px}
+    .logo i{font-size:17px;margin-left:12px}
+  }
 </style>
 </head>
 <body>
@@ -120,7 +145,7 @@
 <header>
   <div class="wrap nav">
     <a class="back" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>Ana sayfa</a>
-    <span class="logo"><b>LOTUS</b><i>Atelier Chocolat</i></span>
+    <span class="logo"><img class="mark" src="assets/logo-icon.webp" alt="" width="44" height="44"><span class="word"><b>LOTUS</b><i>Atelier Chocolat</i></span></span>
     <span class="nav-end" aria-hidden="true"></span>
   </div>
 </header>
