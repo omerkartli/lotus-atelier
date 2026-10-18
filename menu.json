@@ -324,19 +324,167 @@
         },
         {
           "ad": "Cheesecake",
-          "urunler": []
+          "urunler": [
+            {
+              "ad": "Çikolatalı Cheesecake",
+              "fiyat": 350,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzNlMDJiMTZjLWMyODEtNDBhMS04ZTk3LWI2NWZkNWE3YmM1OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Limonlu Cheesecake",
+              "fiyat": 350,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzViM2IyYTE5LTcyNWYtNDA1NC04MmJjLTk1YWU2Mzc3NmMyZi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Frambuazlı Cheesecake",
+              "fiyat": 350,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2M4ZGFkZDJjLTY3N2YtNGNjYy04YWNmLTdmY2JiYjcyZGEzOS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "San Sebastian",
+              "fiyat": 470,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzJiYjliMzY3LWNiYzMtNGZiMS04MDFmLTUyNTNiZjMxMWQ2Yy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "San Sebastian Cheesecake, Sütlü Çikolata, Antep Fıstığı",
+              "aktif": true
+            }
+          ]
         },
         {
           "ad": "Kruvasan",
-          "urunler": []
+          "urunler": [
+            {
+              "ad": "Kruvasan Tabağı (2 Kişilik)",
+              "fiyat": 740,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2ZkYTcyOWMxLTI1NjItNDAyMC04ZjA5LTJlMWVjYTFkMTQ2Mi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "%100 Tereyağlı Mini Kruvasan (Altı Adet), Muz, Çilek, Beyaz Çikolata, Sütlü Çikolata, Antep Fıstığı",
+              "aktif": true
+            },
+            {
+              "ad": "Orman Meyveli Kruvasan",
+              "fiyat": 490,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzQ2MmZhZWU3LWRmNTktNDNjMy05YWUyLWI3NzZlMjgxNmMzZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "%100 Tereyağlı Kruvasan, Orman Meyveleri, Krema, Sütlü Çikolata, Beyaz Çikolata",
+              "aktif": true
+            },
+            {
+              "ad": "Meyveli Kruvasan",
+              "fiyat": 475,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2RjZTg0MjhjLWYwMTgtNGIxNC1hY2JlLWEwZDNkOTBjNDYyMi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "%100 Tereyağlı Kruvasan, Krema, Muz, Çilek, Sütlü Çikolata, Antep Fıstığı, Fransız Bisküvisi",
+              "aktif": true
+            },
+            {
+              "ad": "Sade Kruvasan",
+              "fiyat": 220,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzhjYWFhZWMwLTRlYWUtNDgyYy04MGVkLTM4MWE4YWNlNjEwYi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "%100 Tereyağlı Kruvasan",
+              "aktif": true
+            },
+            {
+              "ad": "Lotuslu Roll Kruvasan",
+              "fiyat": 475,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2M0MTI2NDU5LWU4OTctNDRjMS1hODllLTkwYmQ2YThkMWMxMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "%100 Tereyağlı Roll Kruvasan, Lotuslu Roll Kreması, Lotus Crumble",
+              "aktif": true
+            },
+            {
+              "ad": "Fıstıklı Roll Kruvasan",
+              "fiyat": 475,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzViNDgzNTcxLWZjOGMtNDk5Yy1iMjVjLWQyOTQzOGIzNWY1MS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "%100 Tereyağlı Roll Kruvasan, Fıstıklı Roll Kreması, Beyaz Çikolata, Antep Fıstığı",
+              "aktif": true
+            },
+            {
+              "ad": "Çikolatalı Roll Kruvasan",
+              "fiyat": 475,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2U3Njg1NzgyLWY3Y2MtNDIwOC1iYjI5LWIzYjUwYTkyMzAzNC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "%100 Tereyağlı Roll Kruvasan, Çikolatalı Roll Kreması, Sütlü Çikolata, Beyaz Çikolata, Fransız Bisküvisi",
+              "aktif": true
+            }
+          ]
         },
         {
           "ad": "Sütlü Tatlılar",
-          "urunler": []
+          "urunler": [
+            {
+              "ad": "Tiramisu",
+              "fiyat": 380,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzZiYTNjOTM5LTJkMDQtNGQ5Ny04OGY3LTBhZDdlZWM2NDM2ZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            }
+          ]
         },
         {
           "ad": "Mini Tatlar",
-          "urunler": []
+          "urunler": [
+            {
+              "ad": "Mini Waffle",
+              "fiyat": 190,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2EzNjkyYWI5LWIzMGYtNDY4NS1hNzM4LTI2OThlMzhmNGM3Ny5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Waffle Ekmeği, Muz, Çilek, Sütlü Çikolata, Antep Fıstığı, Fransız Bisküvisi",
+              "aktif": true
+            },
+            {
+              "ad": "Mini Kruvasan",
+              "fiyat": 190,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzIyN2M1OTEwLWU3OTktNGZiOC05MDhmLTgwNjJiYThmZGRiMi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "Mini Kruvasan, Sütlü Çikolata, Antep Fıstığı",
+              "aktif": true
+            },
+            {
+              "ad": "Mini Cookie Fıstıklı Porsiyon",
+              "fiyat": 300,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2JiMzU0NzI1LTY1ODQtNGU2ZC1iNmZjLTg1OTIyN2M5OGZjOS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            },
+            {
+              "ad": "Mini Cookie Porsiyon",
+              "fiyat": 280,
+              "fiyatNot": "",
+              "foto": "",
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2M5ZDAzYmMwLTc3MTItNDJlNi1iZGYyLTUzMDVlYmNhNzM5YS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ==",
+              "aciklama": "",
+              "aktif": true
+            }
+          ]
         }
       ],
       "urunler": []
