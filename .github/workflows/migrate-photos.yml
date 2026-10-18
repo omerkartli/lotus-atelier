@@ -1,0 +1,50 @@
+# Elle çalıştırılır (Actions sekmesi → "Fotoğrafları Simpra'dan taşı" → Run workflow).
+# menu.json'daki harici (fotoUrl) fotoğrafları indirip images/ klasörüne webp olarak taşır.
+# "dry_run" açıkken (varsayılan) sadece indirir ve doğrular, hiçbir şey kaydetmez.
+name: Fotoğrafları Simpra'dan taşı
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Sadece dene (indir ve doğrula, kaydetme)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fotograflari-kucult
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pillow kur
+        run: pip install pillow
+      - name: Fotoğrafları taşı
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 _tools/migrate_photos.py --dry-run
+          else
+            python3 _tools/migrate_photos.py
+          fi
+      - name: Değişiklik varsa kaydet
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Değişiklik yok."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Harici fotoğrafları repoya taşı (otomatik)"
+          git pull --rebase origin main
+          git push origin HEAD:main
