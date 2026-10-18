@@ -1272,7 +1272,107 @@
     {
       "ad": "Ekstralar",
       "ilaveler": false,
-      "urunler": []
+      "urunler": [
+        {
+          "ad": "Sütlü Çikolata",
+          "fiyat": 95,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "%100 Belçika Çikolatası",
+          "aktif": true
+        },
+        {
+          "ad": "Beyaz Çikolata",
+          "fiyat": 95,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "%100 Belçika Çikolatası",
+          "aktif": true
+        },
+        {
+          "ad": "Bitter Çikolata",
+          "fiyat": 95,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "%100 Belçika Çikolatası",
+          "aktif": true
+        },
+        {
+          "ad": "Ruby Çikolata",
+          "fiyat": 125,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "%100 Belçika Çikolatası",
+          "aktif": true
+        },
+        {
+          "ad": "Muz",
+          "fiyat": 70,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "",
+          "aktif": true
+        },
+        {
+          "ad": "Çilek",
+          "fiyat": 80,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "",
+          "aktif": true
+        },
+        {
+          "ad": "Ananas",
+          "fiyat": 90,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "",
+          "aktif": true
+        },
+        {
+          "ad": "Fransız Bisküvisi",
+          "fiyat": 50,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "",
+          "aktif": true
+        },
+        {
+          "ad": "Antep Fıstığı",
+          "fiyat": 100,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "1. Sınıf Özel Antep Fıstığı",
+          "aktif": true
+        },
+        {
+          "ad": "Dondurma",
+          "fiyat": 75,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "Kesme Dondurma",
+          "aktif": true
+        },
+        {
+          "ad": "Espresso",
+          "fiyat": 35,
+          "fiyatNot": "",
+          "foto": "",
+          "fotoUrl": "",
+          "aciklama": "",
+          "aktif": true
+        }
+      ]
     }
   ],
   "ilaveler": [
