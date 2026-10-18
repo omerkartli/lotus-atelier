@@ -40,6 +40,9 @@ Bu dosya, projeye bir süre ara verince hatırlanması gerekenleri tutar.
 - **Çalışma saatleri:** Google'a göre her gün 08:30 – 00:30. Google'da Salı "01:30–00:30"
   yazıyor (yazım hatası sanılıyor); Instagram biyografisi 09:00 – 00:00 diyor. Rezervasyon saatleri
   09:00–23:00 saatlik (`SLOTS`).
+- **Sadakat kartı metni:** Kart fotoğrafından yalnızca "8 tatlı alana 1 tatlı hediye" ve "*Shareable tatlılar hariç"
+  biliniyor. Sitedeki "siparişinizi verirken kartınızı bize gösterin" ve "8 mühür dolunca bir tatlı hediye"
+  cümleleri bundan çıkarıldı; hangi tatlıların "shareable" sayıldığı ve mühür kuralı işyerinden teyit edilmeli (`index.html`, `#sadakat`).
 - **Fotoğrafsız ürünler:** 27 ürünün fotoğrafı yok; panelden yüklenebilir.
 
 ## Teknik notlar
