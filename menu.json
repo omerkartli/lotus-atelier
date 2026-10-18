@@ -16,65 +16,76 @@
           "ad": "Akdeniz Klasiği",
           "fiyat": 445,
           "aciklama": "Dana Jambon, Labne, Beyaz Peynir, Roka, Domates, Nane, Kekik, Karabiber, Göbek Marul\nYancılar: Çeri Domates, Salatalık, Yeşil ve Siyah Zeytin",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2ZlZTYzY2MxLTUxZDAtNDU4OS1hZjMwLWY5ODA3ODMwNGI4OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Yumurtalı Brunch",
           "fiyat": 445,
           "aciklama": "Labne, Çırpılmış Yumurta, Domates, Göbek Marul\nYancılar: Çeri Domates, Salatalık, Yeşil ve Siyah Zeytin",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2EzZDU1Mzc0LTdhZGItNGQ2Ny1hYjliLWJkMmU1ODllYTcxZS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Gurme Dörtlü",
           "fiyat": 455,
           "aciklama": "Beyaz Peynir, Kaşar Peyniri, Çedar Peyniri, Dana Jambon, Labne, Domates, Roka\nYancılar: Çeri Domates, Salatalık, Yeşil ve Siyah Zeytin",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzZlMzdjY2MxLTcxY2QtNGQzMC04NGFiLTdjMjIxNTRlZjYxOS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Sıcak Füme Tabağı",
           "fiyat": 455,
           "aciklama": "Hindi Füme, Çedar Peyniri, Göbek Marul, Domates, Labne, Kaşar Peyniri, Roka\nYancılar: Çeri Domates, Salatalık, Yeşil ve Siyah Zeytin",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzE4NWRlZjVkLTZjMDEtNGRlMy05MTc2LWNjMGI2ZGZhYzhmNy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Gün Tabağı",
           "fiyat": 450,
           "aciklama": "Bu ürün minimum 4 kişilik servis edilmektedir. Kaliteli hizmet sunabilmek adına siparişlerin en az 1 gün önceden verilmesi rica olunur.",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2I1ZTI5MzAyLWUyOGMtNDg4ZC1hNDBlLTRjNjNmZjA0NmE0ZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Lotus Lezzet Tabağı",
           "fiyat": 480,
           "aciklama": "Çift göz yumurta, peynir çeşitleri, hindi füme, taze yeşillikler, zeytinler, kuru domates, acuka, tereyağı, reçel ve taze ekmek dilimleriyle hazırlanan doyurucu kahvaltı tabağı.",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzUzZTNhNmI2LTdjZTMtNDFlOS1hMDEzLWM2ZGE0NmJkOTIzNy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Füme Avokado",
           "fiyat": 460,
           "aciklama": "Labne, Pesto, Hindi füme, Avokado püre, Göz yumurta, Karışık salata, Yeşil zeytin, Siyah zeytin",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzAxYTE2MWRiLTQ1ODgtNDVjYi05MDQxLTBhNTc0ZDUzODZiOS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Üç Peynir Rüyası",
           "fiyat": 460,
           "aciklama": "Labne, Çedar peyniri, Beyaz peynir, Biberli sos, Avokado püre, Göz yumurta, Karışık salata, Yeşil zeytin, Siyah zeytin",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2E0ZGViOTk3LThkMmQtNDlkMC05ZTY4LWM4NjlhMDRkMDAyYS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Menemen",
           "fiyat": 250,
           "aciklama": "Taze domates, yeşil biber ve yumurtanın enfes uyumu. Geleneksel tarifle hazırlanan sıcacık menemen.",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzgzNjI4YTIzLTg3ZTYtNDA5YS1iNWFhLWYxZTVmYjhhZmNlYS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Sahanda Sucuklu Yumurta",
           "fiyat": 290,
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzJkMjE1ZDNiLTE1ZWYtNDRiYS1hMjlmLWZjODRlYmE5NWZmNC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Sahanda Yumurta",
           "fiyat": 190,
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzM3ZTcxNDU3LWM0NTYtNGJjZS05NzRkLTM1ZGY1ZGJjNGE1OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Kaşarlı Omlet",
@@ -84,17 +95,20 @@
         {
           "ad": "Karışık Tost",
           "fiyat": 330,
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzZmNzVhNjZhLWRiNTMtNDMzNS05MzY5LWFjZjVlNWU1YjBlZi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Kaşarlı Tost",
           "fiyat": 300,
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2VjNzdlNmEwLTVjNTMtNGNjNi1hNDhiLTk0OTY2ODk5ZTMyMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Çıtır Patates Keyfi",
           "fiyat": 190,
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzI0ZDI5ZWNkLTFlYjUtNGI3Ny04OTU2LWE3YjdjZTNlNDgzMy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Hellim (3 Dilim)",
@@ -116,19 +130,22 @@
           "ad": "Fıstık Sufle",
           "fiyat": 480,
           "aciklama": "Antep Baklavasını Bir De Böyle Deneyin (Dondurma İle Servis Edilir)",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzYyZGI5OGQyLTcwOTAtNGIzNC04M2ZlLTFlOThmNWM0ZTBkOS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Fıstık Burger",
           "fiyat": 560,
           "aciklama": "Burger Keki, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzM0YzA0ZGVhLWFmMDgtNDliYS05YjkxLTg2NzcwYmI3NTI4NS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Adrenalin",
           "fiyat": 690,
           "aciklama": "Antep Fıstığı Ezmesi, Kesme Dondurma, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-          "aktif": true
+          "aktif": true,
+          "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2UxNDgzMGYwLTMyNzYtNGQzNi05MmU4LWVmMmUxNWE2NGE0Ni5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
         },
         {
           "ad": "Adrenalin dene",
@@ -150,103 +167,120 @@
               "ad": "Strawberry Chocolate",
               "fiyat": 380,
               "aciklama": "Çilek, Sütlü Çikolata",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzRiNTkwMTAxLTUyYzYtNGIyYi04MzJlLWQ5NDlkNjA3NDgzYy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Tropical Chocolate",
               "fiyat": 490,
               "aciklama": "Ananas, Çilek, Muz, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı, Fransız Bisküvisi",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2U4MzU2OTM2LTQyMTktNDk1ZS05YjkxLTk2ZmQxM2I3MmUwYS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Endorfin",
               "fiyat": 485,
               "aciklama": "Krema, Brownie, Muz, Çilek, Beyaz Çikolata, Sütlü Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzE2NjdhODZkLWZmNjAtNGI3Yy05MDA3LWZmMTg4NWE1NzUzYy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Çilekli Endorfin",
               "fiyat": 485,
               "aciklama": "Krema, Kadife Keki, Çilek, Ruby Çikolatası, Beyaz Çikolata, Sütlü Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2U5MmUwODg3LWZmMDMtNDEzZS1hY2Q0LWQ5NjRhNjZiMjA3Ny5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Serotonin",
               "fiyat": 495,
               "aciklama": "Krep, Krema, Muz, Çilek, Brownie, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzBmM2NmNDlmLTE0MWEtNGYzZC05MjNhLWEwZDM4NWUwNzYxYy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Adını Sen Koy",
               "fiyat": 495,
               "aciklama": "Krep, Krema, Muz, Çilek, Sütlü Çikolata, Beyaz Çikolata, Fransız Bisküvisi, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzBhOWU2Y2UwLWU3NWYtNDA4OC1hZWY4LTc4ZjBjNDQyODJiNS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Pankek Tabağı",
               "fiyat": 520,
               "aciklama": "Pankek (Yirmi Adet), Muz, Çilek, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzkxNGViZTMwLTg1YzctNDA3YS1iZmQzLTI5NjUwMjMyNWI4OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Dopamin",
               "fiyat": 480,
               "aciklama": "Krema, Çilek, Lotus Crumble, Antep Fıstığı, Beyaz Çikolata, Sütlü Çikolata",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzNmYjU0MGIwLTVkMGQtNDgwMC1iOGUxLWVlM2VkNWY3NmFiNS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Brownie",
               "fiyat": 430,
               "aciklama": "Brownie, Muz, Çilek, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzNhYWUxZDFlLWZjOWYtNDcwYS1iZmRlLTc4MGEzOGFiNjZkMy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Lotus Brownie",
               "fiyat": 495,
               "aciklama": "İki Kat Brownie, Krema, Muz, Çilek, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2QxOWI5MmVjLWM0NTQtNDhiMy05ZjQ4LTE1MzI0YmU1YTkyMC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Dondurmalı Brownie",
               "fiyat": 450,
               "aciklama": "Brownie, Muz, Çilek, Kesme Dondurma, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2UyYWFhNzYwLTUwNTgtNGI5Yi1iMzhlLTNhYzYwMjE5ZDViMy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Lotus Burger",
               "fiyat": 490,
               "aciklama": "Üç Kat Pankek, Krema, Muz, Çilek, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzRlOWIyNzcxLTUxYjgtNGFhMy1hNGY0LTBjN2Q3NzFjZWE1OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Kadife Burger",
               "fiyat": 495,
               "aciklama": "Üç Kat Kadife Keki, Krema, Çilek, Sütlü Çikolata, Beyaz Çikolata",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2M3NGMzMzhjLWIzYTYtNDRlYi1iNWViLTk5ZmVhNDBkMTkzYS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Waffle",
               "fiyat": 495,
               "aciklama": "Waffle Ekmeği, Muz, Çilek, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı, Fransız Bisküvisi",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzhiMmNkNGVlLWM1NjUtNGQ1Ny04OWJkLTY1Y2E0MWFjYjVhYS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Double Waffle (Paylaşmalık)",
               "fiyat": 685,
               "aciklama": "Çift Kat Waffle Ekmeği, Muz, Çilek, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı, Fransız Bisküvisi",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzdkMDdjNjcwLTg0NWYtNDVkZS04NWU1LWRiNTllZTQ5Zjc0Yy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Profiterol",
               "fiyat": 370,
               "aciklama": "Profiterol (Üç Adet), Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2IwODkzNDZhLTdiMmMtNDc3Yi04OTllLWRlMTM5ZjUwYzcxYi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Meyveli Profiterol",
               "fiyat": 440,
               "aciklama": "Profiterol (Üç Adet), Muz, Çilek, Ananas, Sütlü Çikolata, Beyaz Çikolata, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2Y0NmI0M2QwLTMyZDEtNDU5OC1iMzc5LTc2ZjY1OGVmYjgwZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Ekler",
@@ -258,34 +292,40 @@
               "ad": "Ekler Porsiyon",
               "fiyat": 240,
               "aciklama": "Ekler (İki Adet), Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzg2ZmE0OTJjLTY4NzEtNGE3Yi1iZmRkLTg3ZDZjZWNmZWQzYi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Meyveli Ekler",
               "fiyat": 320,
               "aciklama": "Ekler (İki Adet), Muz, Çilek, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2I4ZTAwOWI2LTU2MjgtNGJlZC1hOGExLWMyNGY4ZTJjYWEyOS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Lotus Mix",
               "fiyat": 1245,
               "aciklama": "Çilek, Muz, Brownie, Mini Kruvasan (Dört Adet), Pankek (Sekiz Adet), Waffle Ekmeği (Dört Adet), Sütlü Çikolata, Beyaz Çikolata, Fransız Bisküvisi, Antep Fıstığı",
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uLzUzYWU4YWIxLWNkZjMtNDZhMC1iMjRmLWEyMDI2ZjY4ODdhMi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Sufle",
               "fiyat": 420,
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2ZkNzVlNDlmLTNhMTYtNDJjMi05Mzg0LTlkOGFmYWExMmIxMi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Fıstıklı Cookie (Adet)",
               "fiyat": 230,
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2M3NTEwYzU4LTQyZjgtNDg3My05OTVkLWE5NDMyZTI3MDQxMy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             },
             {
               "ad": "Çikolatalı Cookie (Adet)",
               "fiyat": 180,
-              "aktif": true
+              "aktif": true,
+              "fotoUrl": "https://images.simpra.app/eyJidWNrZXQiOiJzaW1wcmEtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJwcm9kdWN0aW9uL2Q4ZTZiNzFhLTdlYjQtNGMxMi1iM2JiLTNhZGUxMmIzOWMxZi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo3MDAsImhlaWdodCI6NzAwLCJmaXQiOiJjb3ZlciJ9LCJqcGVnIjp7InF1YWxpdHkiOjgwLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZX19fQ=="
             }
           ]
         },
