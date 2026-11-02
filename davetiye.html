@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lotus Atelier Chocolat grup etkinlikleri için hediye dijital davetiye. Doğum günü, kutlama ve buluşmalar için kendi davetiyenizi oluşturun.">
+<meta name="theme-color" content="#0f1420">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<title>Hediye Davetiye · Lotus Atelier Chocolat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbf8f2;--surface:#fff;--tint:#f1ebdc;--accent:#14803a;--accent-hover:#0f6a2f;
+    --heading:#26402d;--gold:#8a5a3c;--ink:#2a2420;--muted:#766c62;--line:#e8e0d0;
+    --shadow:0 18px 40px -18px rgba(38,64,45,.4);
+    --display:"Cormorant Garamond",Georgia,serif;
+    --body:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;
+    --script:"Great Vibes","Cormorant Garamond",cursive;
+    --t1:#c9efd6;--t2:#14803a; /* davetiye tema renkleri */
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased}
+  [hidden]{display:none!important}
+  a{color:inherit}
+  .wrap{max-width:560px;margin:0 auto;padding:0 16px}
+  header.top{background:#0f1420;color:#fff}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;max-width:1100px}
+  .back{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:14px}
+  .back img{width:34px;height:34px;border-radius:50%}
+  .back span.w{font-family:"Playfair Display",var(--display);color:#1ba045;font-size:20px;letter-spacing:.04em}
+  .home{font-size:14px;color:#cfd6e4;text-decoration:none}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;border:1.5px solid var(--accent);background:var(--accent);color:#fff;font:600 15px var(--body);cursor:pointer;text-decoration:none}
+  .btn:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
+  .btn.ghost{background:transparent;color:var(--accent)}
+  .btn.ghost:hover{background:var(--tint)}
+  .btn.block{width:100%}
+  .btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #7ee3a0;outline-offset:2px}
+
+  /* Oluşturucu */
+  .intro{padding:30px 0 6px;text-align:center}
+  .intro .tag{display:inline-block;background:var(--tint);color:var(--gold);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+  .intro h1{font-family:var(--display);font-weight:600;font-size:38px;line-height:1.1;color:var(--heading);margin:14px 0 8px}
+  .intro h1 em{color:var(--gold)}
+  .intro p{margin:0 auto;max-width:440px;color:var(--muted)}
+  .steps{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:18px 0 0;padding:0;list-style:none;font-size:13px;color:var(--muted)}
+  .steps li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+  form.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px;margin:22px 0;box-shadow:var(--shadow);display:grid;gap:14px}
+  label{min-width:0;display:grid;gap:6px;font-weight:600;font-size:14px;color:var(--heading)}
+  label small{font-weight:400;color:var(--muted)}
+  input,select,textarea{min-width:0;max-width:100%;font:400 16px var(--body);color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+  textarea{min-height:84px;resize:vertical}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .types{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .types input{position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;pointer-events:none}
+  .types label{margin:0;text-align:center;border:1.5px solid var(--line);border-radius:14px;padding:12px 6px;background:var(--bg);cursor:pointer;font-size:13px}
+  .types label b{display:block;font-size:22px;line-height:1.2}
+  .types input:checked+label{border-color:var(--accent);background:#e9f6ee}
+  .types input:focus-visible+label{outline:3px solid #7ee3a0;outline-offset:2px}
+  .err{color:#c43c3c;font-size:13px;margin:0}
+  .result{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px;margin:0 0 22px;box-shadow:var(--shadow);display:grid;gap:12px}
+  .result h2{margin:0;font-family:var(--display);font-size:26px;color:var(--heading)}
+  .result input{font-size:13px}
+  .sample{margin:0 0 34px;text-align:center;color:var(--muted);font-size:14px}
+  .sample a{color:var(--accent);font-weight:600}
+  .note{font-size:12.5px;color:var(--muted);text-align:center;margin:0 0 40px}
+
+  /* Davetiye */
+  .stage{padding:26px 0 40px}
+  .invite{position:relative;overflow:hidden;border-radius:26px;background:linear-gradient(170deg,var(--t1),#fff 42%);border:1px solid var(--line);box-shadow:var(--shadow);text-align:center;padding:34px 24px 26px}
+  .invite::before,.invite::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,var(--t2) 0,transparent 68%);opacity:.14;pointer-events:none}
+  .invite::before{top:-90px;left:-90px}.invite::after{bottom:-100px;right:-90px}
+  .invite>*{position:relative}
+  .invite .logo{width:58px;height:58px;border-radius:50%;margin:0 auto 6px;display:block}
+  .invite .brand{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  .invite .emoji{font-size:44px;line-height:1;margin:18px 0 4px}
+  .invite .kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--heading);font-weight:700}
+  .invite h1{font-family:var(--script);font-weight:400;font-size:64px;line-height:1.05;margin:8px 0 2px;color:var(--t2);word-break:break-word}
+  .invite .sub{font-family:var(--display);font-style:italic;font-size:22px;color:var(--heading);margin:0 0 18px}
+  .invite .msg{font-family:var(--display);font-size:20px;line-height:1.35;color:var(--ink);margin:0 auto 20px;max-width:380px;white-space:pre-line;word-break:break-word}
+  .when{background:var(--surface);border:1px solid var(--line);border-radius:18px;display:grid;grid-template-columns:1fr 1fr;margin:0 0 14px}
+  .when div{padding:14px 8px}
+  .when div+div{border-left:1px solid var(--line)}
+  .when b{display:block;font-family:var(--display);font-size:23px;line-height:1.15;color:var(--heading)}
+  .when span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+  .place{margin:0 0 4px;font-weight:600;color:var(--heading)}
+  .place small{display:block;font-weight:400;color:var(--muted)}
+  .host{margin:16px 0 0;font-size:13px;color:var(--muted)}
+  .gift{display:inline-block;margin-top:16px;background:#fff;border:1px dashed var(--gold);color:var(--gold);border-radius:999px;font-size:12px;padding:6px 14px}
+  .actions{display:grid;gap:10px;margin-top:18px}
+  .actions .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .actions .btn{min-height:48px}
+  .cta{margin:22px 0 0;text-align:center;font-size:14px;color:var(--muted)}
+  .cta a{color:var(--accent);font-weight:700}
+  .confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+  .confetti i{position:absolute;top:-14px;width:8px;height:14px;border-radius:2px;opacity:.75;animation:fall linear infinite}
+  @keyframes fall{to{transform:translateY(560px) rotate(540deg)}}
+  @media (prefers-reduced-motion:reduce){.confetti{display:none}}
+  @media (max-width:380px){.invite h1{font-size:52px}.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="back" href="./"><img src="assets/logo-icon.webp" alt="" width="34" height="34"><span class="w">LOTUS</span></a>
+  <a class="home" href="./">&larr; Ana sayfa</a>
+</div></header>
+
+<main class="wrap">
+  <!-- OLUŞTURUCU -->
+  <section id="creator">
+    <div class="intro">
+      <span class="tag">Lotus'tan hediye</span>
+      <h1>Etkinliğiniz için <em>dijital davetiye</em></h1>
+      <p>Doğum günü, kutlama ya da buluşma; bilgileri girin, davetiyenizi hemen WhatsApp'tan paylaşın.</p>
+      <ul class="steps"><li>1 · Bilgileri girin</li><li>2 · Linki alın</li><li>3 · Davetlilere yollayın</li></ul>
+    </div>
+
+    <form class="card" id="form" novalidate>
+      <div>
+        <div class="types" role="radiogroup" aria-label="Etkinlik türü">
+          <input type="radio" name="t" id="t-dogum" value="dogum" checked><label for="t-dogum"><b>🎂</b>Doğum günü</label>
+          <input type="radio" name="t" id="t-kutlama" value="kutlama"><label for="t-kutlama"><b>🥂</b>Kutlama</label>
+          <input type="radio" name="t" id="t-bulusma" value="bulusma"><label for="t-bulusma"><b>☕</b>Buluşma</label>
+        </div>
+      </div>
+      <label>Davetiyede görünecek isim
+        <input name="ad" maxlength="40" placeholder="Örn. Elif" autocomplete="off" required>
+        <small>Doğum günü sahibi ya da etkinliğin adı</small>
+      </label>
+      <div class="row">
+        <label>Tarih<input type="date" name="tarih" required></label>
+        <label>Saat<input type="time" name="saat" value="15:00" required></label>
+      </div>
+      <label>Mesajınız <small>(isteğe bağlı)</small>
+        <textarea name="mesaj" maxlength="200" placeholder="Sizi aramızda görmekten mutluluk duyarız."></textarea>
+      </label>
+      <label>Sizin adınız <small>(isteğe bağlı)</small>
+        <input name="ev" maxlength="40" placeholder="Örn. Ayşe ve Mehmet" autocomplete="name">
+      </label>
+      <label>Yanıtların geleceği WhatsApp numarası <small>(isteğe bağlı)</small>
+        <input name="tel" type="tel" inputmode="tel" maxlength="20" placeholder="05xx xxx xx xx" autocomplete="tel">
+        <small>Davetliler "Geliyorum" derse mesaj bu numaraya gider.</small>
+      </label>
+      <p class="err" id="err" hidden></p>
+      <button class="btn block" type="submit">Davetiyemi oluştur</button>
+    </form>
+
+    <div class="result" id="result" hidden>
+      <h2>Davetiyeniz hazır 🎉</h2>
+      <input id="link" readonly aria-label="Davetiye linki">
+      <div class="actions">
+        <a class="btn" id="wa" target="_blank" rel="noopener">WhatsApp'ta paylaş</a>
+        <div class="two">
+          <button class="btn ghost" id="copy" type="button">Linki kopyala</button>
+          <a class="btn ghost" id="preview" target="_blank" rel="noopener">Önizle</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="sample">Nasıl görüneceğini merak mı ediyorsunuz? <a id="sampleLink" href="#">Örnek doğum günü davetiyesi</a></p>
+    <p class="note">Davetiye linki bilgilerinizi içerir; Lotus'ta kayıtlı bir veri tutulmaz.<br>Masa ayırtmak için <a href="./#iletisim">bizimle iletişime geçin</a>.</p>
+  </section>
+
+  <!-- DAVETİYE -->
+  <section id="view" class="stage" hidden>
+    <article class="invite" id="invite">
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <img class="logo" src="assets/logo-icon.webp" alt="" width="58" height="58">
+      <div class="brand">Lotus Atelier Chocolat</div>
+      <div class="emoji" id="vEmoji" aria-hidden="true"></div>
+      <div class="kicker" id="vKicker"></div>
+      <h1 id="vName"></h1>
+      <p class="sub" id="vSub"></p>
+      <p class="msg" id="vMsg"></p>
+      <div class="when">
+        <div><b id="vDate"></b><span id="vDay"></span></div>
+        <div><b id="vTime"></b><span>Saat</span></div>
+      </div>
+      <p class="place">Lotus Atelier Chocolat<small>Güngören Mah. Tolgahan Sk. Ticari A Blok No: 3 ABO, Çekmeköy / İstanbul</small></p>
+      <p class="host" id="vHost" hidden></p>
+      <span class="gift">🎁 Lotus'tan hediye davetiye</span>
+    </article>
+    <div class="actions">
+      <div class="two" id="rsvp" hidden>
+        <a class="btn" id="yes" target="_blank" rel="noopener">Geliyorum</a>
+        <a class="btn ghost" id="no" target="_blank" rel="noopener">Gelemiyorum</a>
+      </div>
+      <div class="two">
+        <a class="btn ghost" id="cal" target="_blank" rel="noopener">Takvime ekle</a>
+        <a class="btn ghost" href="https://www.google.com/maps?cid=3338198839499526617" target="_blank" rel="noopener">Yol tarifi</a>
+      </div>
+      <button class="btn ghost" id="share" type="button" hidden>Davetiyeyi paylaş</button>
+    </div>
+    <p class="cta">Siz de etkinliğiniz için <a href="davetiye.html">hediye davetiye oluşturun</a>.</p>
+  </section>
+</main>
+
+<script>
+(function(){
+  const TYPES = {
+    dogum:   {emoji:"🎂", kicker:"Doğum günü daveti", sub:"doğum gününe davetlisiniz", msg:"Sizi aramızda görmekten, birlikte tatlı bir mola vermekten mutluluk duyarız.", t1:"#fbd9e3", t2:"#b0486b", title:"Doğum günü"},
+    kutlama: {emoji:"🥂", kicker:"Kutlama daveti", sub:"kutlamasına davetlisiniz", msg:"Bu özel günü sizinle paylaşmak istiyoruz. Çikolata ve tatlılar bizden.", t1:"#fdeec2", t2:"#9a6a12", title:"Kutlama"},
+    bulusma: {emoji:"☕", kicker:"Buluşma daveti", sub:"buluşmasına davetlisiniz", msg:"Bir fincan kahve ve güzel bir sohbet için sizi bekliyoruz.", t1:"#c9efd6", t2:"#14803a", title:"Buluşma"}
+  };
+  const $ = id => document.getElementById(id);
+  const q = new URLSearchParams(location.search);
+  const pad = n => String(n).padStart(2,"0");
+  const clean = (s,n) => String(s||"").replace(/[\u0000-\u001f]/g," ").trim().slice(0,n);
+
+  function parseDate(d,t){
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d||""), h = /^(\d{2}):(\d{2})$/.exec(t||"");
+    if(!m||!h) return null;
+    const dt = new Date(+m[1],+m[2]-1,+m[3],+h[1],+h[2]);
+    return isNaN(dt) ? null : dt;
+  }
+  function waNumber(raw){
+    let n = String(raw||"").replace(/\D/g,"");
+    if(n.length<10) return "";
+    if(n.startsWith("00")) n = n.slice(2);
+    else if(n.startsWith("0")) n = "90"+n.slice(1);
+    else if(n.length===10) n = "90"+n;
+    return n;
+  }
+
+  function buildLink(v){
+    const p = new URLSearchParams();
+    p.set("t",v.t); p.set("ad",v.ad); p.set("d",v.tarih); p.set("s",v.saat);
+    if(v.mesaj) p.set("m",v.mesaj);
+    if(v.ev) p.set("e",v.ev);
+    if(v.tel) p.set("w",v.tel);
+    return new URL("davetiye.html",location.href).origin+location.pathname.replace(/[^/]*$/,"")+"davetiye.html?"+p.toString();
+  }
+
+  /* ---------- Davetiye görünümü ---------- */
+  function showInvite(){
+    const type = TYPES[q.get("t")] || TYPES.dogum;
+    const ad = clean(q.get("ad"),40), dt = parseDate(q.get("d"),q.get("s"));
+    if(!ad || !dt) return false;
+    document.documentElement.style.setProperty("--t1",type.t1);
+    document.documentElement.style.setProperty("--t2",type.t2);
+    document.title = ad + " · " + type.title + " daveti";
+    $("vEmoji").textContent = type.emoji;
+    $("vKicker").textContent = type.kicker;
+    $("vName").textContent = ad;
+    $("vSub").textContent = type.sub;
+    $("vMsg").textContent = clean(q.get("m"),200) || type.msg;
+    $("vDate").textContent = dt.toLocaleDateString("tr-TR",{day:"numeric",month:"long"});
+    $("vDay").textContent = dt.toLocaleDateString("tr-TR",{weekday:"long"}) + " · " + dt.getFullYear();
+    $("vTime").textContent = pad(dt.getHours())+":"+pad(dt.getMinutes());
+    const ev = clean(q.get("e"),40);
+    if(ev){ $("vHost").hidden = false; $("vHost").textContent = "Davet eden: " + ev; }
+
+    const when = dt.toLocaleDateString("tr-TR",{day:"numeric",month:"long",weekday:"long"}) + " " + $("vTime").textContent;
+    const num = waNumber(q.get("w"));
+    if(num){
+      $("rsvp").hidden = false;
+      const base = "https://wa.me/"+num+"?text=";
+      $("yes").href = base + encodeURIComponent("Merhaba! "+ad+" "+type.title.toLowerCase()+" davetiniz için teşekkürler, "+when+" tarihinde geliyorum 🎉");
+      $("no").href  = base + encodeURIComponent("Merhaba! Davetiniz için teşekkürler ama maalesef katılamayacağım. Keyifli bir gün dilerim 💐");
+    }
+    const f = d => d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+"T"+pad(d.getHours())+pad(d.getMinutes())+"00";
+    const end = new Date(dt.getTime()+3*3600e3);
+    $("cal").href = "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(ad+" · "+type.title+" daveti")+
+      "&dates="+f(dt)+"/"+f(end)+"&ctz=Europe/Istanbul&location="+encodeURIComponent("Lotus Atelier Chocolat, Güngören Mah. Tolgahan Sk. Çekmeköy / İstanbul")+
+      "&details="+encodeURIComponent(clean(q.get("m"),200) || type.msg);
+    if(navigator.share){
+      $("share").hidden = false;
+      $("share").addEventListener("click",()=>navigator.share({title:document.title,url:location.href}).catch(()=>{}));
+    }
+    const cols = [type.t2,"#d9a574","#4ed17e","#f2b8c9","#f6d77a"], box = $("confetti");
+    for(let i=0;i<22;i++){
+      const e = document.createElement("i");
+      e.style.cssText = "left:"+(Math.random()*100)+"%;background:"+cols[i%cols.length]+";animation-duration:"+(7+Math.random()*7)+"s;animation-delay:-"+(Math.random()*10)+"s";
+      box.appendChild(e);
+    }
+    return true;
+  }
+
+  /* ---------- Oluşturucu ---------- */
+  function initCreator(){
+    const form = $("form"), err = $("err");
+    const today = new Date(), min = today.getFullYear()+"-"+pad(today.getMonth()+1)+"-"+pad(today.getDate());
+    form.tarih.min = min;
+    // Örnek davetiye: önümüzdeki cumartesi
+    const s = new Date(); s.setDate(s.getDate()+((6-s.getDay()+7)%7||7));
+    const sd = s.getFullYear()+"-"+pad(s.getMonth()+1)+"-"+pad(s.getDate());
+    $("sampleLink").href = buildLink({t:"dogum",ad:"Elif",tarih:sd,saat:"15:30",mesaj:"Doğum günümde en sevdiğim tatlıları sizinle paylaşmak istiyorum. Sürpriz var, geç kalmayın!",ev:"Elif ve ailesi",tel:""});
+    form.addEventListener("submit",e=>{
+      e.preventDefault();
+      const f = new FormData(form);
+      const v = {t:f.get("t"),ad:clean(f.get("ad"),40),tarih:f.get("tarih"),saat:f.get("saat"),mesaj:clean(f.get("mesaj"),200),ev:clean(f.get("ev"),40),tel:""};
+      const rawTel = clean(f.get("tel"),20);
+      if(!v.ad || !parseDate(v.tarih,v.saat)){ err.hidden=false; err.textContent="Lütfen isim, tarih ve saati doldurun."; return; }
+      if(rawTel){
+        v.tel = waNumber(rawTel);
+        if(!v.tel){ err.hidden=false; err.textContent="WhatsApp numarasını 05xx xxx xx xx biçiminde yazın."; return; }
+      }
+      err.hidden = true;
+      const url = buildLink(v);
+      $("link").value = url;
+      $("preview").href = url;
+      $("wa").href = "https://wa.me/?text="+encodeURIComponent("Sizi davet ediyoruz! 🎉 Davetiyemiz: "+url);
+      $("result").hidden = false;
+      $("result").scrollIntoView({behavior:"smooth",block:"center"});
+    });
+    $("copy").addEventListener("click",async()=>{
+      try{ await navigator.clipboard.writeText($("link").value); }catch(_){ $("link").select(); document.execCommand("copy"); }
+      $("copy").textContent = "Kopyalandı ✓"; setTimeout(()=>$("copy").textContent="Linki kopyala",2000);
+    });
+  }
+
+  if(q.has("ad") && showInvite()){ $("view").hidden = false; $("creator").hidden = true; }
+  else initCreator();
+})();
+</script>
+</body>
+</html>
