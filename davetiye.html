@@ -192,6 +192,7 @@
         <a class="btn ghost" id="cal" target="_blank" rel="noopener">Takvime ekle</a>
         <a class="btn ghost" href="https://www.google.com/maps?cid=3338198839499526617" target="_blank" rel="noopener">Yol tarifi</a>
       </div>
+      <button class="btn ghost" id="png" type="button">Görsel olarak indir (PNG)</button>
       <button class="btn ghost" id="share" type="button" hidden>Davetiyeyi paylaş</button>
     </div>
     <p class="cta">Siz de etkinliğiniz için <a href="davetiye.html">hediye davetiye oluşturun</a>.</p>
@@ -234,6 +235,77 @@
     return new URL("davetiye.html",location.href).origin+location.pathname.replace(/[^/]*$/,"")+"davetiye.html?"+p.toString();
   }
 
+
+  /* ---------- PNG çıktısı (canvas) ---------- */
+  function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath();}
+  function wrap(c,text,maxW){
+    const lines=[];
+    String(text).split("\n").forEach(par=>{
+      let line="";
+      par.split(/\s+/).forEach(w=>{
+        const t=line?line+" "+w:w;
+        if(c.measureText(t).width>maxW && line){lines.push(line);line=w;} else line=t;
+      });
+      lines.push(line);
+    });
+    return lines;
+  }
+  async function renderPng(d){
+    try{ await Promise.all(['400 64px "Great Vibes"','italic 500 30px "Cormorant Garamond"','500 30px "Cormorant Garamond"','600 30px "Cormorant Garamond"','700 24px Manrope','400 24px Manrope'].map(f=>document.fonts.load(f))); }catch(_){}
+    const W=1080,H=1620,cv=document.createElement("canvas");cv.width=W;cv.height=H;
+    const c=cv.getContext("2d"),cx=W/2;
+    const SERIF='"Cormorant Garamond",Georgia,serif',SANS='Manrope,system-ui,sans-serif';
+    const g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,d.type.t1);g.addColorStop(.45,"#ffffff");g.addColorStop(1,"#ffffff");
+    c.fillStyle=g;c.fillRect(0,0,W,H);
+    [[0,0],[W,H]].forEach(([x,y])=>{const r=c.createRadialGradient(x,y,0,x,y,520);r.addColorStop(0,d.type.t2+"30");r.addColorStop(1,d.type.t2+"00");c.fillStyle=r;c.fillRect(0,0,W,H);});
+    // konfeti (sabit tohumla)
+    let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+    const cols=[d.type.t2,"#d9a574","#4ed17e","#f2b8c9","#f6d77a"];
+    for(let i=0;i<46;i++){c.save();c.translate(rnd()*W,rnd()*H*.72);c.rotate(rnd()*6.28);c.globalAlpha=.55;c.fillStyle=cols[i%5];c.fillRect(-8,-14,16,28);c.restore();}
+    c.textAlign="center";c.textBaseline="alphabetic";
+    // logo
+    try{
+      const img=await new Promise((res,rej)=>{const i=new Image();i.onload=()=>res(i);i.onerror=rej;i.src="assets/logo-icon.webp";});
+      c.save();c.beginPath();c.arc(cx,170,70,0,6.283);c.clip();c.drawImage(img,cx-70,100,140,140);c.restore();
+    }catch(_){}
+    c.fillStyle="#8a5a3c";c.font="700 26px "+SANS;if("letterSpacing" in c)c.letterSpacing="7px";
+    c.fillText("LOTUS ATELIER CHOCOLAT",cx,300);
+    c.font="110px 'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif";if("letterSpacing" in c)c.letterSpacing="0px";
+    c.fillText(d.type.emoji,cx,450);
+    c.fillStyle="#26402d";c.font="700 30px "+SANS;if("letterSpacing" in c)c.letterSpacing="6px";
+    c.fillText(d.type.kicker.toUpperCase(),cx,525);
+    if("letterSpacing" in c)c.letterSpacing="0px";
+    // isim: sığana kadar küçült
+    let fs=190;c.fillStyle=d.type.t2;
+    do{c.font="400 "+fs+"px 'Great Vibes',"+SERIF;fs-=6;}while(c.measureText(d.ad).width>880&&fs>60);
+    c.fillText(d.ad,cx,690);
+    c.fillStyle="#26402d";c.font="italic 500 56px "+SERIF;c.fillText(d.type.sub,cx,780);
+    // mesaj
+    c.fillStyle="#2a2420";c.font="500 50px "+SERIF;
+    const lines=wrap(c,d.msg,800).slice(0,5);let y=880;
+    lines.forEach(l=>{c.fillText(l,cx,y);y+=64;});
+    // tarih kutusu
+    const by=Math.max(y+20,1010),bx=120,bw=840,bh=190;
+    c.fillStyle="#fff";rr(c,bx,by,bw,bh,40);c.fill();c.strokeStyle="#e8e0d0";c.lineWidth=3;c.stroke();
+    c.beginPath();c.moveTo(cx,by+24);c.lineTo(cx,by+bh-24);c.stroke();
+    c.fillStyle="#26402d";c.font="600 66px "+SERIF;c.fillText(d.dateText,bx+bw/4,by+92);c.fillText(d.timeText,bx+bw*3/4,by+92);
+    c.fillStyle="#766c62";c.font="700 22px "+SANS;if("letterSpacing" in c)c.letterSpacing="3px";
+    c.fillText(d.dayText.toUpperCase(),bx+bw/4,by+142);c.fillText("SAAT",bx+bw*3/4,by+142);
+    if("letterSpacing" in c)c.letterSpacing="0px";
+    // yer
+    let py=by+bh+70;
+    c.fillStyle="#26402d";c.font="700 36px "+SANS;c.fillText("Lotus Atelier Chocolat",cx,py);
+    c.fillStyle="#766c62";c.font="400 27px "+SANS;
+    wrap(c,"Güngören Mah. Tolgahan Sk. Ticari A Blok No: 3 ABO, Çekmeköy / İstanbul",820).forEach(l=>{py+=40;c.fillText(l,cx,py);});
+    if(d.host){py+=64;c.fillStyle="#766c62";c.font="400 28px "+SANS;c.fillText("Davet eden: "+d.host,cx,py);}
+    // hediye damgası
+    const gy=Math.min(py+50,H-110);
+    c.font="500 26px "+SANS;const gt="🎁 Lotus'tan hediye davetiye",gw=c.measureText(gt).width+56;
+    c.setLineDash([8,6]);c.strokeStyle="#8a5a3c";c.lineWidth=2;c.fillStyle="#fff";rr(c,cx-gw/2,gy,gw,56,28);c.fill();c.stroke();c.setLineDash([]);
+    c.fillStyle="#8a5a3c";c.fillText(gt,cx,gy+37);
+    return new Promise(res=>cv.toBlob(res,"image/png"));
+  }
+
   /* ---------- Davetiye görünümü ---------- */
   function showInvite(){
     const type = TYPES[q.get("t")] || TYPES.dogum;
@@ -266,6 +338,17 @@
     $("cal").href = "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(ad+" · "+type.title+" daveti")+
       "&dates="+f(dt)+"/"+f(end)+"&ctz=Europe/Istanbul&location="+encodeURIComponent("Lotus Atelier Chocolat, Güngören Mah. Tolgahan Sk. Çekmeköy / İstanbul")+
       "&details="+encodeURIComponent(clean(q.get("m"),200) || type.msg);
+    $("png").addEventListener("click",async()=>{
+      const btn=$("png"),old=btn.textContent;btn.disabled=true;btn.textContent="Hazırlanıyor…";
+      try{
+        const blob=await renderPng({type,ad,msg:clean(q.get("m"),200)||type.msg,host:ev,
+          dateText:$("vDate").textContent,dayText:$("vDay").textContent,timeText:$("vTime").textContent});
+        const name="davetiye-"+ad.toLowerCase().replace(/[^a-z0-9ığüşöç]+/gi,"-").replace(/^-|-$/g,"")+".png";
+        const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();
+        setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+      }catch(_){ btn.textContent="Olmadı, tekrar deneyin"; setTimeout(()=>btn.textContent=old,2500); btn.disabled=false; return; }
+      btn.textContent=old;btn.disabled=false;
+    });
     if(navigator.share){
       $("share").hidden = false;
       $("share").addEventListener("click",()=>navigator.share({title:document.title,url:location.href}).catch(()=>{}));
