@@ -149,6 +149,21 @@
   .custom{margin-top:44px;border-radius:24px;background:var(--tint-strong);padding:40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
   .custom>div{min-width:0}
   .custom h3{font-family:var(--display);font-size:32px;font-weight:600;line-height:1.15;color:var(--heading)}
+  .nav-toggle{display:none;width:46px;height:46px;border:1.5px solid #2a3550;border-radius:12px;background:transparent;cursor:pointer;flex:none;padding:0;position:relative}
+  .nav-toggle span{position:absolute;left:12px;right:12px;height:2px;border-radius:2px;background:#e6efe8;transition:transform .2s,opacity .2s}
+  .nav-toggle span:nth-child(1){top:15px}.nav-toggle span:nth-child(2){top:22px}.nav-toggle span:nth-child(3){top:29px}
+  .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-toggle:focus-visible{outline:3px solid #7ee3a0;outline-offset:2px}
+  .nav-panel{position:absolute;left:0;right:0;top:100%;background:var(--brand-dark);border-bottom:1px solid #1d2638;box-shadow:0 18px 30px -12px rgba(0,0,0,.5);padding:8px 16px 14px;display:none}
+  .nav-panel a{display:block;padding:14px 4px;color:#e6efe8;font-weight:600;font-size:17px;border-bottom:1px solid #1d2638}
+  .nav-panel a:last-child{border-bottom:0}
+  .nav-panel a:hover{color:var(--brand)}
+  @media (max-width:900px){
+    .nav-toggle{display:block;margin-left:auto}
+    .nav-panel:not([hidden]){display:block}
+  }
   .custom-actions{display:flex;gap:10px;flex-wrap:wrap}
   .invite-promo{background:var(--tint)}
   .invite-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
@@ -366,7 +381,15 @@
       <li><a href="#iletisim">İletişim</a></li>
     </ul>
     <button class="btn btn-primary" type="button" data-reserve>Rezervasyon Yap</button>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navPanel"><span></span><span></span><span></span></button>
   </div>
+  <nav class="nav-panel" id="navPanel" aria-label="Site menüsü" hidden>
+    <a href="menu.html">Menü</a>
+    <a href="#mekan">Mekân</a>
+    <a href="#davetiye">Davetiye</a>
+    <a href="#sadakat">Sadakat Kartı</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
 </header>
 
 <main id="top">
@@ -755,6 +778,15 @@
     const d=new Date();d.setDate(d.getDate()+((6-d.getDay()+7)%7||7));
     const p=n=>String(n).padStart(2,"0");
     a.href="davetiye.html?"+new URLSearchParams({t:"dogum",ad:"Elif",d:d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate()),s:"15:30",m:"Doğum günümde en sevdiğim tatlıları sizinle paylaşmak istiyorum. Sürpriz var, geç kalmayın!",e:"Elif ve ailesi"});
+  })();
+
+  (function(){
+    const t=document.getElementById("navToggle"),p=document.getElementById("navPanel");if(!t||!p)return;
+    const set=o=>{p.hidden=!o;t.setAttribute("aria-expanded",o);t.setAttribute("aria-label",o?"Menüyü kapat":"Menüyü aç");};
+    t.addEventListener("click",()=>set(p.hidden));
+    p.addEventListener("click",e=>{if(e.target.closest("a"))set(false);});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape")set(false);});
+    document.addEventListener("click",e=>{if(!p.hidden&&!e.target.closest("header"))set(false);});
   })();
 </script>
 </body>
