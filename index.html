@@ -150,6 +150,29 @@
   .custom>div{min-width:0}
   .custom h3{font-family:var(--display);font-size:32px;font-weight:600;line-height:1.15;color:var(--heading)}
   .custom-actions{display:flex;gap:10px;flex-wrap:wrap}
+  .invite-promo{background:var(--tint)}
+  .invite-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .invite-grid>*{min-width:0}
+  .invite-promo h2{font-family:var(--display);font-weight:600;font-size:clamp(34px,4.5vw,48px);line-height:1.1;color:var(--heading);margin:10px 0 14px}
+  .invite-promo h2 em{color:var(--rose);font-style:italic}
+  .invite-promo p{color:var(--muted);max-width:520px}
+  .invite-list{list-style:none;padding:0;margin:18px 0 24px;display:grid;gap:8px;color:var(--ink)}
+  .invite-list li{padding-left:26px;position:relative}
+  .invite-list li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .invite-actions{display:flex;gap:10px;flex-wrap:wrap}
+  .invite-mock{display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px;max-width:340px;justify-self:center;width:100%;padding:30px 22px 24px;border-radius:26px;text-decoration:none;color:#26402d;background:linear-gradient(170deg,#fbd9e3,#fff 48%);border:1px solid #e8e0d0;box-shadow:0 24px 44px -20px rgba(38,64,45,.45);transform:rotate(2deg);transition:transform .25s}
+  .invite-mock:hover{transform:rotate(0) translateY(-4px)}
+  .im-brand{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#8a5a3c;font-weight:700}
+  .im-emoji{font-size:40px;line-height:1.3;margin-top:8px}
+  .im-kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+  .im-name{font-family:"Great Vibes",var(--display);font-size:60px;line-height:1.1;color:#b0486b}
+  .im-sub{font-family:var(--display);font-style:italic;font-size:21px;margin-bottom:16px}
+  .im-when{display:grid;grid-template-columns:1fr 1fr;width:100%;background:#fff;border:1px solid #e8e0d0;border-radius:16px;margin-bottom:14px}
+  .im-when b{display:block;padding:12px 4px;font-family:var(--display);font-size:24px;line-height:1.1;font-weight:600}
+  .im-when b+b{border-left:1px solid #e8e0d0}
+  .im-when small{display:block;font-family:var(--body);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#766c62;margin-top:3px}
+  .im-gift{font-size:11px;color:#8a5a3c;border:1px dashed #8a5a3c;border-radius:999px;padding:5px 12px;background:#fff}
+  @media (max-width:860px){.invite-grid{grid-template-columns:1fr;gap:36px}}
   .custom p{color:var(--muted);max-width:520px;margin-top:6px}
 
   .why{background:var(--surface);border-block:1px solid var(--line)}
@@ -338,7 +361,7 @@
     <ul>
       <li><a href="menu.html">Menü</a></li>
       <li><a href="#mekan">Mekân</a></li>
-      <li><a href="davetiye.html">Davetiye</a></li>
+      <li><a href="#davetiye">Davetiye</a></li>
       <li><a href="#sadakat">Sadakat Kartı</a></li>
       <li><a href="#iletisim">İletişim</a></li>
     </ul>
@@ -431,6 +454,34 @@
           <p>Çikolata ve tatlılar yanında kahve ve soğuk içecekler; hepsi tek masada.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="block invite-promo" id="davetiye">
+    <div class="wrap invite-grid">
+      <div>
+        <span class="eyebrow">🎁 Lotus'tan hediye</span>
+        <h2>Grup etkinliklerine <em>dijital davetiye</em> hediye</h2>
+        <p>Doğum günü, kutlama ya da arkadaş buluşması; Lotus'ta yapacağınız grup etkinlikleri için kendi davetiyenizi dakikalar içinde hazırlayın. Linki WhatsApp'tan davetlilerinize gönderin, katılım yanıtlarını doğrudan telefonunuza alın.</p>
+        <ul class="invite-list">
+          <li>Tarih, saat ve konum davetiyede hazır</li>
+          <li>Canlı geri sayım, takvime ekle, yol tarifi</li>
+          <li>Görsel olarak indirip paylaşabilirsiniz</li>
+        </ul>
+        <div class="invite-actions">
+          <a class="btn btn-primary" href="davetiye.html">Davetiyemi Oluştur</a>
+          <a class="btn btn-ghost" id="inviteSample" href="davetiye.html">Örneği Gör</a>
+        </div>
+      </div>
+      <a class="invite-mock" href="davetiye.html" aria-label="Davetiye oluştur">
+        <span class="im-brand">Lotus Atelier Chocolat</span>
+        <span class="im-emoji" aria-hidden="true">🎂</span>
+        <span class="im-kicker">Doğum günü daveti</span>
+        <span class="im-name">Elif</span>
+        <span class="im-sub">doğum gününe davetlisiniz</span>
+        <span class="im-when"><b>20 Mart<small>Cumartesi</small></b><b>15:30<small>Saat</small></b></span>
+        <span class="im-gift">🎁 Lotus'tan hediye davetiye</span>
+      </a>
     </div>
   </section>
 
@@ -698,6 +749,13 @@
     } catch(_) { selectFallback(); }
   });
 
+
+  (function(){
+    const a=document.getElementById("inviteSample");if(!a)return;
+    const d=new Date();d.setDate(d.getDate()+((6-d.getDay()+7)%7||7));
+    const p=n=>String(n).padStart(2,"0");
+    a.href="davetiye.html?"+new URLSearchParams({t:"dogum",ad:"Elif",d:d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate()),s:"15:30",m:"Doğum günümde en sevdiğim tatlıları sizinle paylaşmak istiyorum. Sürpriz var, geç kalmayın!",e:"Elif ve ailesi"});
+  })();
 </script>
 </body>
 </html>
