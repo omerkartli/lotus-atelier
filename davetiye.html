@@ -86,6 +86,11 @@
   .when div+div{border-left:1px solid var(--line)}
   .when b{display:block;font-family:var(--display);font-size:23px;line-height:1.15;color:var(--heading)}
   .when span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+  .count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 16px}
+  .count div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 2px}
+  .count b{display:block;font-family:var(--display);font-size:30px;line-height:1.1;color:var(--t2);font-variant-numeric:tabular-nums lining-nums}
+  .count span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+  .count-msg{margin:0 0 16px;font-family:var(--display);font-size:24px;font-weight:600;color:var(--t2)}
   .place{margin:0 0 4px;font-weight:600;color:var(--heading)}
   .place small{display:block;font-weight:400;color:var(--muted)}
   .host{margin:16px 0 0;font-size:13px;color:var(--muted)}
@@ -179,6 +184,10 @@
         <div><b id="vDate"></b><span id="vDay"></span></div>
         <div><b id="vTime"></b><span>Saat</span></div>
       </div>
+      <div class="count" id="count" aria-live="off" hidden>
+        <div><b id="cD">0</b><span>gün</span></div><div><b id="cH">0</b><span>saat</span></div><div><b id="cM">0</b><span>dakika</span></div><div><b id="cS">0</b><span>saniye</span></div>
+      </div>
+      <p class="count-msg" id="countMsg" hidden></p>
       <p class="place">Lotus Atelier Chocolat<small>Güngören Mah. Tolgahan Sk. Ticari A Blok No: 3 ABO, Çekmeköy / İstanbul</small></p>
       <p class="host" id="vHost" hidden></p>
       <span class="gift">🎁 Lotus'tan hediye davetiye</span>
@@ -322,6 +331,23 @@
     $("vDate").textContent = dt.toLocaleDateString("tr-TR",{day:"numeric",month:"long"});
     $("vDay").textContent = dt.toLocaleDateString("tr-TR",{weekday:"long"}) + " · " + dt.getFullYear();
     $("vTime").textContent = pad(dt.getHours())+":"+pad(dt.getMinutes());
+    (function countdown(){
+      const box=$("count"),msg=$("countMsg"),DUR=3*3600e3;
+      function tick(){
+        const diff=dt-Date.now();
+        if(diff>0){
+          box.hidden=false;msg.hidden=true;
+          const t=Math.floor(diff/1000);
+          $("cD").textContent=Math.floor(t/86400);$("cH").textContent=Math.floor(t%86400/3600);
+          $("cM").textContent=Math.floor(t%3600/60);$("cS").textContent=t%60;
+        }else{
+          box.hidden=true;msg.hidden=false;
+          msg.textContent=-diff<DUR?"Etkinlik şu an devam ediyor 🎉":"Bu etkinlik tamamlandı, teşekkürler 💐";
+          clearInterval(timer);
+        }
+      }
+      const timer=setInterval(tick,1000);tick();
+    })();
     const ev = clean(q.get("e"),40);
     if(ev){ $("vHost").hidden = false; $("vHost").textContent = "Davet eden: " + ev; }
 
